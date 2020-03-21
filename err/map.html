@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"
+        src="http://api.map.baidu.com/api?v=3.0&ak=5HMiOwELmUTZeBVOiFS28ci0qh4THWwH"></script>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        #container {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个容器 -->
+    <div id="container"></div>
+</body>
+<script>
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            //获取需要展示的位置信息
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.latitude;
+            //创建一个地图
+            var map = new BMap.Map("container");
+            //创建一个点
+            var point = new BMap.Point(longitude, latitude);
+            //展示地图
+            map.centerAndZoom(point, 15);
+            
+        });
+    }
+</script>
+
+</html>
