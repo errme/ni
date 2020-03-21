@@ -18,7 +18,7 @@
             height: 100%;
         }
     </style>
-    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=OGy2BX9zNhoGAt3fltlR3UlfUNwtbAmD"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=OGy2BX9zNhoGAt3fltlR3UlfUNwtbAmD"></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             var longitude = position.coords.latitude;
             //创建一个地图
             var map = new BMap.Map("container");
-            //创建一个点
+            //创建一个点B
             var point = new BMap.Point(longitude, latitude);
             //展示地图
             map.centerAndZoom(point, 15);
