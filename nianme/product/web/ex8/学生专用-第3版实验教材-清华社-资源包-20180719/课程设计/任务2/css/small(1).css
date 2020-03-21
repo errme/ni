@@ -1,0 +1,59 @@
+/* small.css  */
+@charset "utf-8";
+/*¿ò¼Ü*/
+#top{ background:#e9e9e9; height:50px; line-height:50px;}
+#top .content{ width:984px;}
+#main { width:984px; overflow:hidden;}
+#footer .content{ width:984px;}
+/*Í¨ÓÃ*/
+.list3pic li{ width:260px; overflow:hidden; margin-right:20px; display:inline; background:#e9e9e9; text-align:center; height:330px;}
+.list3li li{ width:200px; height:165px; margin:15px 0; margin-right:15px; overflow:hidden;}
+.list3li li .bg{ width:200px; }
+.list3li li .text{ width:200px;}
+/*index*/
+.index .part1 { padding-bottom:65px;}
+.index .part1 .fl{ width:455px;}
+.index .part1 .fr{ width:455px;}
+.index .part1 .fl .content{  height:360px; }
+.index .part1 .fr .content{  height:360px;}
+.index .part2 .fl{ width:308px; overflow:hidden; }
+.index .part2 .fr{ width:308px; overflow:hidden;}
+.index .part2 .pic .bg{  width:308px; height:220px; }
+#rolldiv { width:984px; } 
+#rolldiv .jcarousel-skin-tango .jcarousel-clip-horizontal { width:984px; } 
+#rolldiv .jcarousel-skin-tango .jcarousel-item { width: 984px; } 
+#rolldiv #mycarousel .bg {width: 984px; } 
+#rolldiv #mycarousel .tit a {width: 984px;  } 
+/*zy*/
+.zy .conRight{ width:824px;}
+.zy .conL1{ width:630px; overflow:hidden;}
+.zy .conL2{ width:690px; overflow:hidden;}
+.zy .conL3{ width:642px;}
+.zy .conR1{ float:right; width:296px;}
+.zy .conR2{ float:right; width:268px;}
+.zy .conR3{ float:right; width:240px;}
+.zy .conR4{ float:right; width:180px;}
+.zy .conR5{ float:right; width:215px;}
+.zy .conR6{ float:right; width:296px;}
+.gytf4 .tab_tit li{  width:260px; margin-right:20px; }
+.cygk .part1 ul{width:970px;}
+.cygk .part1 li{ width:221px; overflow:hidden;}
+.picarea2 .pos_div{ width:480px; margin-right:24px; overflow:hidden;}
+.picarea3 .con{ width:312px; margin-right:20px; overflow:hidden;	}
+.gdtd .part1 td{ padding-left:15px;}
+.gdtd .part1 .td_bg{ background:none; line-height:35px; color:#fff; width:105px;}
+.gdtd .part1 .td_bg span{ background:url(../img/common1.png) 0 -136px no-repeat; display:block; overflow:hidden;}
+.hxnl .part2 .fl{ width:460px;}
+.hxnl .list3pic li{ width:310px; overflow:hidden; margin-right:20px; display:inline; background:#e9e9e9; text-align:center; height:330px;}
+.lxwm .conR2{ margin-top:580px;}
+.lxwm .conL2{ width:690px; overflow:inherit;}
+.page a{  padding:0 6px; margin-right:5px; background:#bcbcbc; color:#fff;}
+.page .wy{ margin-right:20px;}
+.show_tfzs .conL1{ width:590px; overflow:hidden;}
+.tfzs .conL1{ width:590px; overflow:hidden;}
+.tfzs3 .conL1{ width:590px; overflow:hidden;}
+.tfzs3 .sp_list li{width:190px;  margin-right:10px; overflow:hidden;}
+.tfzs3 .sp_list li .pic{ width:190px;}
+.tfzs3 .sp_list li .bg{  width:190px; background:url(../img/sp_bg.png) 50% 0; }
+.xlc{ margin-right:10px;}
+.zpxx .conL1{ width:680px; overflow:hidden;}

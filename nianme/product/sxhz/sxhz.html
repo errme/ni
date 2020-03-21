@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Web实训汇总</title>
+		<script src="sxhz.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			table {
+				margin: 170px 90px;
+				width: 600px;
+				height: 350px;
+				text-align: center;
+				background: rgba(0, 0, 0, 0.1);
+			}
+
+			#div0 {
+				width: 250px;
+			}
+
+			h3 {
+				font-size: 16px;
+			}
+
+			#sxhz {
+				font-size: 20px;
+				color: gray;
+			}
+
+			td {
+				font-size: 14px;
+				color: gray;
+			}
+		</style>
+	</head>
+	<body onload="load();" onunload="unload();">
+		<table border="0" eight="350px" frame="border" rules="all">
+			<tr>
+				<td colspan="3" height="70px" id="sxhz">Web实训汇总</td>
+			</tr>
+			<tr>
+				<td id="div0">
+					请选择要看的章节
+				</td>
+				<td id="div0"><select name="mainmenu" id="mainmenu" size="1" onchange="aa()">
+						<option value="sb1" selected>
+							选择看的章节< </option> <option value="m1" id="m1">HTML基础</option>
+						<option value="m2" id="m2">页面布局基础</option>
+						<option value="m3" id="m3">JavaScript应用</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td id="div0">
+					请选择章节的实训
+				</td id="div0">
+				<td id="div0"><select name="subtitle" id="subtitle" size="1" onchange="bb()">
+					</select></td>
+			</tr>
+			<tr>
+				<td id="div0">
+					请选择要看的网页
+				</td id="div0">
+				<td id="div0"><select name="suptitle" size="1" id="suptitle">
+					</select></td>
+			</tr>
+			<tr>
+				<td id="div0"><input type="button" value="运行" onclick="f()" class="button"></td>
+				<td id="div0"><input type="reset" value="清空" class="button"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><a href="https://xgan.me">返回上主页</a></td>
+			</tr>
+		</table>
+		<iframe name="iframe" src="../about/img/QQ图片20190422204940.gif" width="600px" height="350px" id="ifm" frameborder="0" id="rect" style="position: absolute; left: 750px; top: 170px;"></iframe>
+	</body>
+</html>
