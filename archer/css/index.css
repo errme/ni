@@ -1,0 +1,73 @@
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+a{
+    color: #333;
+}
+.heima_topBar{
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
+    z-index: 1001;
+    position: relative;
+}
+
+.heima_topBar>.container>.row>div{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.heima_topBar>.container>.row>div+div{
+    border-left: 1px solid #ccc;
+}
+.heima_topBar a{
+    text-decoration: none;
+    color: #333;
+}
+.btn-login{
+    color: #333;
+    text-decoration: none;
+}
+.heima_app img{
+    display: none;
+}
+.heima_app:hover img{
+    display: block;
+    position: absolute;
+    top: 40px;
+}
+.heima_topBar .heima_app{
+    color: #333;
+    text-decoration: none;
+}
+.heima_topBar .btn-register{
+    color: white;
+}
+
+.heima_nav .nav_brand{
+    background-color: #fff;
+}
+.heima_nav .navbar-brand{
+    height: 80px;
+}
+.heima_nav .navbar-nav>li>a{
+    height: 80px;
+    line-height: 50px;
+    color: #777;
+}
+.heima_nav .navbar-nav>li>a:hover,
+.heima_nav .navbar-nav>li>a:focus{
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+.heima_nav .navbar-toggle{
+    border-color: #ddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.heima_nav .navbar-toggle .icon-bar{
+    background-color: #888;
+}
