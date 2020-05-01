@@ -87,3 +87,6 @@ a{
 .heima_info>.heima_font_color{
     color: #888;
 }
+.heima_info a:hover{
+    color: red;
+}
