@@ -83,3 +83,7 @@ a{
 .heima_info>.heima-icon{
     font-size: 30px;
 }
+
+.heima_info>.heima_font_color{
+    color: #888;
+}
