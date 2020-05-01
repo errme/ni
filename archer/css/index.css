@@ -74,17 +74,17 @@ a{
 
 /* 信息和预约模块 */
 .heima_info{
-    padding: 150px 50px 50px;
+    padding: 100px 50px 50px;
     border-bottom: 1px solid #ccc;
 }
 .heima_info>.container{
     width: 910px;
 }
-.heima_info>.heima-icon{
+.heima_info .heima-icon{
     font-size: 30px;
 }
 
-.heima_info>.heima_font_color{
+.heima_info .heima_font_color{
     color: #888;
 }
 .heima_info a:hover{
