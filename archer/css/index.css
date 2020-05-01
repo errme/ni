@@ -90,3 +90,7 @@ a{
 .heima_info a:hover{
     color: red;
 }
+.heima_info{
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+}
