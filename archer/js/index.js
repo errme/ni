@@ -9,7 +9,7 @@ function banner() {
     var maData;
     var getData = function (callback) {
         $.ajax({
-            url: "js/index.js",
+            url: "js/index.json",
             type: "get",
             data: {},
             dataType: "json",
