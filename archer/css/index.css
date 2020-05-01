@@ -71,3 +71,9 @@ a{
 .heima_nav .navbar-toggle .icon-bar{
     background-color: #888;
 }
+
+/* 信息和预约模块 */
+.heima_info{
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+}
