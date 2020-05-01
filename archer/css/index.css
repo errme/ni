@@ -94,3 +94,11 @@ a{
     padding: 25px;
     border-bottom: 1px solid #ccc;
 }
+.heim_book>.container{
+    width: 900px;
+}
+@media screen and(max-width:768px){
+    .heima_bool>,.container{
+        width: 100%;;
+    }
+}
