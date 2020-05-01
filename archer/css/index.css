@@ -74,7 +74,7 @@ a{
 
 /* 信息和预约模块 */
 .heima_info{
-    padding: 50px;
+    padding: 150px 50px 50px;
     border-bottom: 1px solid #ccc;
 }
 .heima_info>.container{
