@@ -102,6 +102,10 @@ a{
         width: 100%;;
     }
 }
+
+.heima_book .heima_icon{
+    font-size: 24px;
+}
 .heima_book .book_link{
     color: red;
     border-bottom: 1px dashed red;
