@@ -113,7 +113,7 @@ a {
     border-bottom: 1px solid #ccc;
 }
 .heima_book{
-    font-size: 15px;
+    font-size: 16px;
 }
 .heima_book>.container {
     width: 900px;
@@ -125,7 +125,9 @@ a {
         ;
     }
 }
-
+.heima_book .heima_icon{
+    font-size: 16px;
+}
 .heima_book .book_link {
     color: red;
     border-bottom: 1px dashed red;
