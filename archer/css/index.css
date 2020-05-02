@@ -98,7 +98,7 @@ a{
     width: 900px;
 }
 @media screen and(max-width:768px){
-    .heima_bool>,.container{
+    .heima_bool>.container{
         width: 100%;;
     }
 }
