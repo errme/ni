@@ -94,18 +94,18 @@ a{
     padding: 25px;
     border-bottom: 1px solid #ccc;
 }
-.heim_book>.container{
+.heima_book>.container{
     width: 900px;
 }
 @media screen and(max-width:768px){
-    .heima_bool>.container{
+    .heima_book>.container{
         width: 100%;;
     }
 }
-.heim_book .book_link{
+.heima_book .book_link{
     color: red;
     border-bottom: 1px dashed red;
 }
-.heim_book .font_height{
+.heima_book .font_height{
     line-height: 25px;
 }
