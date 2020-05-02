@@ -112,7 +112,9 @@ a {
     padding: 25px;
     border-bottom: 1px solid #ccc;
 }
-
+.heima_book{
+    font-size: 15px;
+}
 .heima_book>.container {
     width: 900px;
 }
