@@ -44,7 +44,7 @@ function banner() {
 
     }
 
-    render();
+    // render();
     $(window).on("resize", function () {
         // banner();
         render();
