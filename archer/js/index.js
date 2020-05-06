@@ -6,7 +6,7 @@ function banner() {
 
     // 通过json获取
     // ajax异步获取
-    // var maData;
+    var maData;
     var getData = function (callback) {
         $.ajax({
             url: "js/index.json",
@@ -14,13 +14,18 @@ function banner() {
             data: {},
             dataType: "json",
             success: function (data) {
-                // myData = data;
+                // 回调函数
+                myData = data;
                 callback && callback(myData);
+            },
+            error: function () {
+                alert("提交失败！");
             }
-        })
-    }
 
-    // 生成页面代码
+        });
+    };
+
+    // 生成页面代码的函数
     var render = function () {
         var isMobile = false;
         var width = $(window).width();
