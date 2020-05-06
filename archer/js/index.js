@@ -6,7 +6,7 @@ function banner() {
 
     // 通过json获取
     // ajax异步获取
-    var maData;
+    // var maData;
     var getData = function (callback) {
         $.ajax({
             url: "js/index.json",
@@ -14,7 +14,7 @@ function banner() {
             data: {},
             dataType: "json",
             success: function (data) {
-                myData = data;
+                // myData = data;
                 callback && callback(myData);
             }
         })
@@ -41,7 +41,8 @@ function banner() {
 
     render();
     $(window).on("resize", function () {
-        banner();
+        // banner();
+        render();
     });
 
 }
