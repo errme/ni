@@ -167,7 +167,6 @@ a {
     width: 108px;
     text-align: center;
     border-left: 1px dashed #ccc;
-    background-color: #e92322;
 }
 .product_box .product_box_right p:first-of-type{
     margin-top: 25px;
@@ -182,11 +181,13 @@ a {
 .product_box .product_box_left{
     overflow: hidden;
     height: 100%;
-    background-color: #e92322;
 }
 .product_box .product_box_left>div{
     margin-top: 10px;
 }
 .product_box .product_box_left>div>p{
     height: 12px;
+}
+.product_box.active{
+    background-color: #e92322;
 }
