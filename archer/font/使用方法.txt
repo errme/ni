@@ -1,0 +1,19 @@
+CSS中：
+@font-face{
+    font-family: itheima;
+    src:url("../fonts/MiFie-Web-Font.eot") format("embedded-opentype"),
+    url("../fonts/MiFie-Web-Font.svg") format("svg"),
+    url("../fonts/MiFie-Web-Font.ttf") format("truetype"),
+    url("../fonts/MiFie-Web-Font.woff") format("woff");
+}
+.heima_icon{
+    font-family: itheima;
+}
+.heima_icon_phone::before{
+    content: "\e908";
+}
+.heima_icon_tel::before{
+    content: "\e909";
+}
+需要引用的html页面中：
+如：<span class="heima_icon heima_icon_E903"></span>
