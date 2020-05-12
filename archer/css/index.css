@@ -167,6 +167,10 @@ a {
     font-size: 14px;
 }
 
+.heima_icon_E909::before {
+    content: "\e909";
+}
+
 .heima_book .book_link {
     color: red;
     border-bottom: 1px dashed red;
