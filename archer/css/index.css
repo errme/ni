@@ -4,6 +4,19 @@ body {
     color: #333;
 }
 
+@font-face{
+    font-family: itheima;
+    src: url(../font/MiFie-Web-Font.eot),
+    url(../font/MiFie-Web-Font.svg),
+    url(../font/MiFie-Web-Font.ttf),
+    url(../font/MiFie-Web-Font.woff);
+}
+
+.heima_icon{
+    font-family: itheima;
+    font-size: 30px;
+}
+
 a {
     color: #333;
 }
@@ -189,4 +202,18 @@ a {
 }
 .product_box.active{
     background-color: #e92322;
+}
+
+/* 新闻模块 */
+.heima_icon_news01::before{
+    content: "\e90e";
+}
+.heima_icon_news02::before{
+    content: "\e90f";
+}
+.heima_icon_news03::before{
+    content: "\e910";
+}
+.heima_icon_news04::before{
+    content: "\e911";
 }
