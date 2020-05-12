@@ -157,7 +157,7 @@ a {
     width: 910px;
 }
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
     .heima_book>.container {
         width: 100%;
     }
