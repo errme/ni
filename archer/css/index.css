@@ -109,8 +109,29 @@ a {
 .heima_info .heima_icon {
     font-size: 25px;
 }
-.heima_icon_E903::before{
+
+.heima_icon_E903::before {
     content: "\e903";
+}
+
+.heima_icon_E907::before {
+    content: "\e907";
+}
+
+.heima_icon_E901::before {
+    content: "\e901";
+}
+
+.heima_icon_E900::before {
+    content: "\e900";
+}
+
+.heima_icon_E904::before {
+    content: "\e904";
+}
+
+.heima_icon_E911::before {
+    content: "\e911";
 }
 
 .heima_info .heima_font_color {
@@ -276,10 +297,11 @@ a {
     text-align: center;
 }
 
-.tab-content{
+.tab-content {
     padding-top: 30px;
 }
-.tab-content li{
+
+.tab-content li {
     padding-bottom: 10px;
 }
 
