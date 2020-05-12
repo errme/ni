@@ -18,9 +18,9 @@ function banner() {
                 myData = data;
                 callback && callback(myData);
             },
-            error: function () {
-                alert("提交失败！");
-            }
+            // error: function () {
+            //     alert("提交失败！");
+            // }
 
         });
     };
