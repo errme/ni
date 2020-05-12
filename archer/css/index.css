@@ -109,6 +109,9 @@ a {
 .heima_info .heima_icon {
     font-size: 25px;
 }
+.heima_icon_E903::before{
+    content: "\e903";
+}
 
 .heima_info .heima_font_color {
     color: #888;
