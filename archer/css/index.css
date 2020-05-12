@@ -217,3 +217,16 @@ a {
 .heima_icon_news04::before{
     content: "\e911";
 }
+
+.heima_news{
+    padding: 20px 0;
+}
+.heima_news .news_title{
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
