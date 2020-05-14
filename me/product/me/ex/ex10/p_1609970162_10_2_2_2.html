@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script type="text/javascript">
+  <!--
+	function $(id){return document.getElementById(id);}
+	function f(n)
+	{
+		if(n==1||n==0)
+		{
+			return 1;
+		}
+		return n*f(n-1);
+	}
+	function show()
+	{
+		var n=parseInt($("Number").value);
+		var sum=0;
+		for(var i=1;i<=n;i++)
+		{
+			sum += f(i);
+		}
+		$("sum").value=sum;
+	}
+  //-->
+  </script>
+ </head>
+ <body>
+  <form method="post" action="">
+	<table>
+	<tr>
+		<td colspan="2">计算∑N！</td>
+	</tr>
+	<tr>
+		<td>输入整数N的值</td>
+		<td><input type="text" name="" size="20" id="Number"></td>
+	</tr>
+	<tr>
+		<td>计算∑N！</td>
+		<td><input type="text" name="" size="20"  id="sum" readonly></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="计算∑N！" onclick="show()"></td>
+		<td><input type="reset" value="清空" ></td>
+	</tr>
+	</table>
+  </form>
+ </body>
+</html>
