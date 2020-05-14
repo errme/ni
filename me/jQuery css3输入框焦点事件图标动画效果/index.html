@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Fancy Textbox Animations using jQuery</title>
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />
+	
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fancy-textbox.js" type="text/javascript"></script>
+	
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/fancy-textbox.css" rel="stylesheet" type="text/css" />
+    
+    <!--[if IE]>      
+    <link rel="stylesheet" type="text/css" href="css/fancy-textbox-ie.css" />
+    <![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input').ftext();
+        });
+    </script>
+	
+</head>
+<body>
+
+    <div class="ppnl">
+        <h1>输入框动画效果</h1>
+    </div>
+    <div class="clearfix">
+    </div>
+	
+    <div class="pn1">
+        <ul class="list clearfix">
+            <li>
+                <input type="text" data-animation="slide" id="fancy" data-label="slide" data-mask="滑动" /></li>
+            <li>
+				<input type="text" data-animation="clean-slide" id="clean" data-label="clean" data-mask="无背景颜色的滑动" />
+			</li>
+			<li>
+				<input type="text" data-animation="clean-slide" id="clean" data-label="clean" data-label-bg="#82cff0" data-label-color="#fff" data-mask="有背景颜色的滑动" />
+			</li>
+        </ul>
+    </div>
+	
+    <div class="pn2">
+        <ul class="list clearfix">
+            <li>
+                <input type="text" data-animation="up" id="up" data-label="up" data-mask="向上" />
+            </li>
+			<li>
+                <input type="text" data-animation="fade" id="fade" data-label="fade" data-mask="消失" />
+            </li>
+			<li>
+                <input type="text" data-animation="rotate-3d-left" id="rotate-3d-left" data-label="3D旋转(向左)" data-mask="看看效果" />
+			</li>
+        </ul>
+    </div>
+	
+    <div class="pn3">
+        <ul class="list clearfix">
+            <li><input type="text" id="Text1" data-icon="icon-user" data-mask="用户图标(无动画)" /></li>
+			<li><input type="text" data-animation="flip" id="Text1" data-icon="icon-user" data-mask="用户图标(有动画)" /></li>
+            <li><input type="text" data-animation="flip" id="Text1" data-icon="icon-ok" data-mask="OK图标" /></li>
+        </ul>
+    </div>
+	
+</body>
+</html>
