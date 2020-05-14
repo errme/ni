@@ -1,164 +1,191 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-<head id="Head1">
-    <title>ni</title>
-    <meta name='keywords' content='后阁楼,小情绪,文艺,小清新,生活,小屋,纸篓,文字杂货铺,小屋,普通人' />
-    <meta name='description' content='后阁楼是一个用来抒发小情绪的网站，希望能成为大深海生物们的居所，照顾你的文字。有一些羞怯的天真浪漫。' />
+<head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="css/common.css-v=11.css" rel="stylesheet" type="text/css" />
-    <link href="css/Tool/nprogress.css" rel="stylesheet" type="text/css" />
-    <link href="css/index.css-v=7.css" rel="stylesheet" type="text/css" />
+
+    <meta name="author" content="苍耳">
+    <meta name="keywords" content="一期一会,草长莺飞">
+    <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
+
+    <title>一期一会</title>
+
+    <link rel="icon" href="images/me.jpg">
+
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="./lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.1.11.1.js" type="text/javascript"></script>
+
 </head>
 
 <body>
-    <form name="form1" method="post" action="" id="form1">
-
-        <link href="css/fonts/font-awesome.css-v=10.css" rel="stylesheet" type="text/css" />
-        <script src="js/bootstrap/js/jquery-1.11.1.min.js-v=10.js" type="text/javascript"></script>
-        
-        <script type="text/javascript">
-            $(function () {
-                //横向小menu
-                var scrollTopVal_head_ = 0;
-                $(window).scroll(function () {
-                    if ($(window).scrollTop() > 0) {
-                        if (!$(".topbar").hasClass("topbarFixed")) {
-                            $(".topbar").addClass("topbarFixed").hide();
-                        }
-                    } else {
-                        $(".topbar").removeClass("topbarFixed");
+    <script type="text/javascript">
+        $(function () {
+            //menu
+            var scrollTopVal_head_ = 0;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 0) {
+                    if (!$(".topbar").hasClass("topbarFixed")) {
+                        $(".topbar").addClass("topbarFixed").hide();
                     }
+                } else {
+                    $(".topbar").removeClass("topbarFixed");
+                }
 
-                    if ($(window).scrollTop() <= scrollTopVal_head_) {
-                        //向上滑
-                        $(".topbarFixed").show();
-                    } else {
-                        $(".topbarFixed").hide();
-                    }
-                    scrollTopVal_head_ = $(window).scrollTop();
-                });
-
+                if ($(window).scrollTop() <= scrollTopVal_head_) {
+                    //向上滑
+                    $(".topbarFixed").show();
+                } else {
+                    $(".topbarFixed").hide();
+                }
+                scrollTopVal_head_ = $(window).scrollTop();
             });
-        </script>
-        <div class="topbar">
-            <div class="content headMenu box">
-                <a class="site_one_logo box" href="index.html">
-                </a>
-                <a class="site_one_logo_scroll box" href="index.html">
-                </a>
-                <ul class="topmenu box">
+
+        });
+    </script>
+
+    <div class="topbar">
+        <div class="content headMenu box">
+            <a class="site_one_logo box" href="index.html">
+            </a>
+            <a class="site_one_logo_scroll box" href="index.html">
+            </a>
+            <ul class="topmenu box">
                 <li><a href="zahuo.htm" class="zahuoMenu">草长莺飞</a></li>
-                    <li><a href="zhilou.htm" class="zhilouMenu">清风月明</a></li>
-                    <li><a href="shuxin.htm" class="shuxinMenu">人间情书</a></li>
-                    <li><a href="tougao.htm">星河滚烫</a></li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="banner_div box">
-
-            <a class="banner_item box" href="about.htm" target="_blank">
-                <img src="images/2222.jpg" />
-            </a>
-
-            <a class="banner_item box" href="song.htm" target="_blank">
-                <img src="Upload/Banner/20170616005501436.jpg" />
-            </a>
+                <li><a href="zhilou.htm" class="zhilouMenu">清风月明</a></li>
+                <li><a href="shuxin.htm" class="shuxinMenu">人间情书</a></li>
+                <li><a href="tougao.htm">星河滚烫</a></li>
+            </ul>
 
         </div>
+    </div>
 
-        <div class="bannner_dot box">
+    <div class="banner_div box">
 
-            <div class='dot_item dot_cur box' index='0'>
-            </div>
+        <a class="banner_item box" href="about.htm" target="_blank">
+            <img src="images/20170616003328714.png" />
+        </a>
 
-            <div class='dot_item  box' index='1'>
-            </div>
-            
+        <a class="banner_item box" href="song.htm" target="_blank">
+            <img src="images/20170616005501436.jpg" />
+        </a>
+
+    </div>
+
+    <div class="bannner_dot box">
+
+        <div class='dot_item dot_cur box' index='0'>
         </div>
 
-        <div id="content" class="box content">
-
-            <div class="tashuo box">
-                <div class="tashuo_content box">
-                    <i class="quote-before fa fa-quote-left"></i>
-                    通知：受网站迁移影响，目前尚不能邮箱注册，待修改后再通知大家。可以使用QQ登录哦。很抱歉，最近网站有一些问题，希望春节我能把它们都解决掉，祝大家新年快乐。我要去做事了哦。
-                    <i class="quote-after fa fa-quote-right"></i>
-                </div>
-                <div class="tashuo_title">TA说</div>
-            </div>
-
-        </div>
-        <div class="topwords box">
-            <div class="content box" style="width: 1148px;">
-                <div class="topw_slogan">一些文字</div>
-                <div class="box">
-
-                    <a class="topw_item" href="w/68.htm" target="_blank">
-                        <div class="box"><img class="topw_photo" src="images/me.jpg" />
-                            <div class="wtop_name">苍耳</div>
-                        </div>
-                        <div class="topw_title box">寻一个目标&nbsp;&nbsp;找一股动力&nbsp;&nbsp;热爱生活</div>
-                        <div class="topw_content box">
-                            突然间发现&nbsp;&nbsp;原来最近的我&nbsp;&nbsp;是那么的糟糕&nbsp;&nbsp;宁愿窝在床上拿手机看无聊的小说&nbsp;&nbsp;也不愿去打扫一下房间&nbsp;&nbsp;不愿去写日记&nbsp;&nbsp;&nbsp;&nbsp;感觉生活没有目标&nbsp;&nbsp;&nbsp;&nbsp;只是不断的听说&nbsp;&nbsp;谁谁谁&nbsp;&nbsp;的业……
-                        </div>
-                    </a>
-
-                    <a class="topw_item" href="w/10.htm" target="_blank">
-                        <div class="box"><img class="topw_photo" src="images/user/ma.jpg" />
-                            <div class="wtop_name">蝶舞</div>
-                        </div>
-                        <div class="topw_title box">Sunshine&nbsp;&nbsp;Be&nbsp;&nbsp;There</div>
-                        <div class="topw_content box">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从来天空不会只有阴霾的灰暗，阳光拨开厚厚的云彩，于是心情也跟着放晴。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曾经有过那么一段时间，把自己藏在自己的幻想里，似乎所以的一切都已经看透，藐视身边的滚滚红尘。不再心情愉悦地去找同学朋友聊天，不再那么相信身边……
-                        </div>
-                    </a>
-
-                    <a class="topw_item" href="w/25.htm" target="_blank">
-                        <div class="box"><img class="topw_photo" src="images/user/ma.jpg" />
-                            <div class="wtop_name">1874</div>
-                        </div>
-                        <div class="topw_title box">2014-01-05</div>
-                        <div class="topw_content box">
-                            最近不知道是不是电影看多了,有种想恋爱的感觉.感觉很多事情我都想和你一起去完成.我想和你一起再去一趟去厦门,悠闲地过,还想再去一趟鼓浪屿,这次除了把本子上的章都盖满,还要享受一下那里浪漫的气息,我想知道在海边看日出是什么样的感觉;想和你去影院看场电影,你陪我看我喜欢的,我陪你看你喜欢的;想你陪着我,度过每一个我想要的周末,逛遍广州的每一个角落,走遍那些我想去还没去的地方;想要时不时地给你做一顿大餐……
-                        </div>
-                    </a>
-
-                    <a class="topw_item" href="w/8.htm" target="_blank">
-                        <div class="box"><img class="topw_photo" src="images/user/mao.jpg" />
-                            <div class="wtop_name">April</div>
-                        </div>
-                        <div class="topw_title box">2013-10-01</div>
-                        <div class="topw_content box">
-                            或许我一直都是这样，总会不小心的或者不在意的忽略掉你。不过我的兔兔，猫猫是最爱你的，从那个莫名其妙的夜晚，看着你坐在我后面睡着到现在，每一天都更喜欢你，能清晰的感觉到自己的世界因为你而变得越来越美好，越来越害怕自己以后就无法离开你了。这时候你会说“为什么要离开呢？我们要依着在一起。”当然也是这么期望的啦，不过就是害怕世事无常，不能和你一直走到有一个温暖的家养一只棕色的小狗的那个时候。人都是这样吧，……
-                        </div>
-                    </a>
-
-                </div>
-                <a href="zahuo.htm" target="_blank" class="w_more box">···</a>
-                
-            </div>
-        </div>
-        
-        <div class="content box" style="margin: 158px auto;font-size:20px; text-align:center;">
-            番茄炒蛋的日常呀，怎么这么慢悠悠的呀。叫我怎么办。。</div>
-
-        <div id="copyright" class="footerDiv">
-            <div class="footerCenter box">
-                <div class="links">
-                    <a href="about.htm">关于后阁楼</a>
-                    <a href="introduction.htm">联系我们</a><a href="history.htm">给我建议</a>
-                </div>
-                <div style="color: #979B9A;">
-                    <a href="""style=" color: #979B9A;">粤ICP备12076479号-1</a></div>
-            </div>
+        <div class='dot_item  box' index='1'>
         </div>
 
-    </form>
-    <script src="js/Tool/nprogress.js" type="text/javascript"></script>
+    </div>
+
+    <div id="content" class="box content">
+
+        <div class="tashuo box">
+            <div class="tashuo_content box">
+                <i class="quote-before fa fa-quote-left"></i>
+                说起女孩子啊，不由得先想到好看的裙摆和清澈的笑。<br>
+                在最好的年纪笑着跳着，似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。若非要找个词来形容，大概是，“春风”？<br>
+                可是，春风十里，还是不如你啊。
+                <i class="quote-after fa fa-quote-right"></i>
+            </div>
+            <div class="tashuo_title">TA说</div>
+        </div>
+
+    </div>
+    <div class="topwords box">
+        <div class="content box" style="width: 1148px;">
+            <div class="topw_slogan">一些文字</div>
+            <div class="box">
+
+                <a class="topw_item" href="article/index.html" target="_blank">
+                    <div class="box"><img class="topw_photo" src="images/me.jpg" />
+                        <div class="wtop_name">苍耳</div>
+                    </div>
+                    <div class="topw_title box">寻一个目标&nbsp;&nbsp;找一股动力&nbsp;&nbsp;热爱生活</div>
+                    <div class="topw_content box">
+                        突然间发现&nbsp;&nbsp;原来最近的我&nbsp;&nbsp;是那么的糟糕&nbsp;&nbsp;宁愿窝在床上拿手机看无聊的小说&nbsp;&nbsp;也不愿去打扫一下房间&nbsp;&nbsp;不愿去写日记&nbsp;&nbsp;&nbsp;&nbsp;感觉生活没有目标&nbsp;&nbsp;&nbsp;&nbsp;只是不断的听说&nbsp;&nbsp;谁谁谁&nbsp;&nbsp;的业……
+                    </div>
+                </a>
+
+                <a class="topw_item" href="article/index.html" target="_blank">
+                    <div class="box"><img class="topw_photo" src="images/me.jpg" />
+                        <div class="wtop_name">苍耳</div>
+                    </div>
+                    <div class="topw_title box">寻一个目标&nbsp;&nbsp;找一股动力&nbsp;&nbsp;热爱生活</div>
+                    <div class="topw_content box">
+                        突然间发现&nbsp;&nbsp;原来最近的我&nbsp;&nbsp;是那么的糟糕&nbsp;&nbsp;宁愿窝在床上拿手机看无聊的小说&nbsp;&nbsp;也不愿去打扫一下房间&nbsp;&nbsp;不愿去写日记&nbsp;&nbsp;&nbsp;&nbsp;感觉生活没有目标&nbsp;&nbsp;&nbsp;&nbsp;只是不断的听说&nbsp;&nbsp;谁谁谁&nbsp;&nbsp;的业……
+                    </div>
+                </a>
+
+                <a class="topw_item" href="article/index.html" target="_blank">
+                    <div class="box"><img class="topw_photo" src="images/me.jpg" />
+                        <div class="wtop_name">苍耳</div>
+                    </div>
+                    <div class="topw_title box">寻一个目标&nbsp;&nbsp;找一股动力&nbsp;&nbsp;热爱生活</div>
+                    <div class="topw_content box">
+                        突然间发现&nbsp;&nbsp;原来最近的我&nbsp;&nbsp;是那么的糟糕&nbsp;&nbsp;宁愿窝在床上拿手机看无聊的小说&nbsp;&nbsp;也不愿去打扫一下房间&nbsp;&nbsp;不愿去写日记&nbsp;&nbsp;&nbsp;&nbsp;感觉生活没有目标&nbsp;&nbsp;&nbsp;&nbsp;只是不断的听说&nbsp;&nbsp;谁谁谁&nbsp;&nbsp;的业……
+                    </div>
+                </a>
+
+                <a class="topw_item" href="article/index.html" target="_blank">
+                    <div class="box"><img class="topw_photo" src="images/me.jpg" />
+                        <div class="wtop_name">苍耳</div>
+                    </div>
+                    <div class="topw_title box">寻一个目标&nbsp;&nbsp;找一股动力&nbsp;&nbsp;热爱生活</div>
+                    <div class="topw_content box">
+                        突然间发现&nbsp;&nbsp;原来最近的我&nbsp;&nbsp;是那么的糟糕&nbsp;&nbsp;宁愿窝在床上拿手机看无聊的小说&nbsp;&nbsp;也不愿去打扫一下房间&nbsp;&nbsp;不愿去写日记&nbsp;&nbsp;&nbsp;&nbsp;感觉生活没有目标&nbsp;&nbsp;&nbsp;&nbsp;只是不断的听说&nbsp;&nbsp;谁谁谁&nbsp;&nbsp;的业……
+                    </div>
+                </a>
+
+            </div>
+            <a href="zahuo.htm" target="_blank" class="w_more box">···</a>
+
+        </div>
+    </div>
+
+    <div class="content box" style="margin: 158px auto;font-size:20px; text-align:center;">
+        番茄炒蛋的日常呀，怎么这么慢悠悠的呀。叫我怎么办。。</div>
+    <footer id="footer">
+
+        <div class="container">
+
+            <p>Copyright &copy; 2019 • Theme by : <a class="posttitle" href="http://xgan.me" target="_self">Canger</a> •
+                Run Time :
+                <a class="posttitle" href="log/index.html" target="_self"><span id="span_dt_dt"></span></a>
+            </p>
+
+        </div>
+
+    </footer>
+    <script>
+        function show_date_time() {
+            window.setTimeout("show_date_time()", 1000);
+            var h = new Date("3/15/2019 08:05:00"),
+                j = new Date,
+                d = j.getTime() - h.getTime(),
+                i = 86400000,
+                b = d / i,
+                g = Math.floor(b),
+                c = 24 * (b - g),
+                a = Math.floor(c),
+                f = 60 * (c - a),
+                l = Math.floor(60 * (c - a)),
+                k = Math.floor(60 * (f - l));
+            // span_dt_dt.innerHTML = g + " day " + a + " hour " + l + " min " + k + " sccond"
+            span_dt_dt.innerHTML = g + " d " + a + " hr " + l + " m " + k + " sec"
+            // span_dt_dt.innerHTML = g + " day " + a + " hour " + l + " min "
+        }
+        show_date_time();
+    </script>
+
     <script type="text/javascript">
         $(function () {
             $("body").hide().fadeIn(3000);
