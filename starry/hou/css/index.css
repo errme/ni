@@ -236,8 +236,7 @@ a.topw_item:hover
 
 
 #footer {
-    z-index: 99;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -246,11 +245,11 @@ a.topw_item:hover
     color: #ccc;
     background: #ffffff;
     text-align: center;
-    font-size: .8rem;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: Consolas, Menlo, Monaco, "lucida console", "Liberation Mono", "Courier New", "andale mono", monospaceX, monospace, sans-serif;
     padding: 1.25rem 0;
-    background-color: #2c2a2a;
+    background-color: gray;
     -webkit-transition: 0.5s ease all;
     -moz-transition: 0.5s ease all;
     -ms-transition: 0.5s ease all;
@@ -344,3 +343,36 @@ body.theme-white #footer p {
 a {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fontawesome-webfont.eot-v=4.4.0')/*tpa=http://www.hougelou.com/css/fonts/fontawesome-webfont.eot?v=4.4.0*/;
+    src: url('fontawesome-webfont.eot-#iefix&v=4.4.0')/*tpa=http://www.hougelou.com/css/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0*/ format('embedded-opentype'), url('fontawesome-webfont.woff2-v=4.4.0')/*tpa=http://www.hougelou.com/css/fonts/fontawesome-webfont.woff2?v=4.4.0*/ format('woff2'), url('fontawesome-webfont.woff-v=4.4.0')/*tpa=http://www.hougelou.com/css/fonts/fontawesome-webfont.woff?v=4.4.0*/ format('woff'), url('fontawesome-webfont.ttf-v=4.4.0')/*tpa=http://www.hougelou.com/css/fonts/fontawesome-webfont.ttf?v=4.4.0*/ format('truetype'), url('fontawesome-webfont.svg-v=4.4.0#fontawesomeregular')/*tpa=http://www.hougelou.com/css/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+.fa-quote-left:before {
+    content: "\f10d";
+  }
+  .fa-quote-right:before {
+    content: "\f10e";
+  }
