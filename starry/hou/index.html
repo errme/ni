@@ -12,9 +12,9 @@
     <title>一期一会</title>
 
     <link rel="icon" href="images/me.jpg">
-
-    <link type="text/css" href="./css/common.css" rel="stylesheet">
-    <link type="text/css" href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
     <script src="./lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
@@ -68,6 +68,52 @@
     </div>
 
     <div class="banner_div box">
+
+        <div id="slidershow" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#slidershow" datta-slide-to="0"></li>
+                <li data-target="#slidershow" datta-slide-to="1"></li>
+                <li data-target="#slidershow" datta-slide-to="2"></li>
+                <li data-target="#slidershow" datta-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href=""><img src="./images/521.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>标题1</h3>
+                        <p>描述1</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./images/521.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>标题2</h3>
+                        <p>描述2</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./images/521.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>标题3</h3>
+                        <p>描述3</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./images/521.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>标题4</h3>
+                        <p>描述4</p>
+                    </div>
+                </div>
+                <!-- 控制器 在轮播图下面 -->
+                <a href="#slidershow" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#slidershow" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
 
         <!-- <a class="banner_item box" href="about.htm" target="_blank">
             <img src="images/20170616003328714.png" />
