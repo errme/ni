@@ -1,0 +1,51 @@
+.topw_item1
+{
+    width: 492px;
+    height: 360px;
+    margin-left: 28px;
+    margin-bottom: 28px;
+    border: 1px solid #f3f3f3;
+    padding:20px;
+    background-color:White;
+    color: gray;
+    overflow: hidden;
+}
+.container{
+    width: 1096px;
+}
+a.topw_item:hover
+{
+    box-shadow: 2px 5px 8px 0 #e8e8e8;
+}
+.topw_photo
+{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right:14px;
+        
+}
+.wtop_name
+{
+    width: 400px;
+    height: 40px;
+    line-height:40px;
+    color: #b3b1b1;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.topw_title
+{
+    font-size: 24px;
+    margin: 16px 0px;
+    color: black;
+    line-height: 1.6em;
+}
+.topw_content
+{
+    line-height: 1.8em;
+    font-size: 15px;
+    color: #5d5b5b;
+}

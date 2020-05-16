@@ -106,7 +106,6 @@ body a:focus, body a:hover {
 }
 
 .content {
-	width: 1096px;
 	height: auto;
 	margin: 0px auto;
 }
@@ -263,217 +262,11 @@ div.topbarFixed .user_login_div {
 	position: relative;
 }
 
-.topbar .voice {
-	position: relative;
-}
-
-.topbar .voice a:hover {
-	border: none;
-}
-
-.topbar .user_login_div {
-	position: absolute;
-	right: 0px;
-	top: 10px;
-}
-
-.topbar .login {
-	text-align: right;
-	position: relative;
-	color: #7d7d7d;
-}
-
-.topbar .login:hover .jiantou, .topbar .voice:hover .jiantou {
-	display: block;
-	position: absolute;
-	left: 11px;
-	top: 26px;
-	width: 14px;
-	height: 14px;
-	display: inline-block;
-	z-index: 302;
-}
-
-.topbar .voice:hover .jiantou {
-	left: 36px;
-}
-
-.topbar .login a {
-	font-size: 12px;
-	margin: 0px;
-	color: #FF5722;
-}
-
-.topbar .login a.nologin:hover {
-	border-bottom: solid 1px #FF5722;
-	padding-bottom: 5px;
-	color: #FF5722;
-}
-
-.topbar .jiantou {
-	display: none;
-}
-
-.jiantou i {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 0;
-	height: 0;
-	overflow: hidden;
-	border-width: 7px;
-	border-style: dashed dashed solid;
-}
-
-.jiantou i.layer1 {
-	border-color: transparent transparent #d9d9d9;
-}
-
-.jiantou i.layer2 {
-	border-color: transparent transparent #FFFFFF;
-	top: 1px;
-}
-
-.topbar .my-account-list a {
-	color: #7d7d7d;
-	display: block;
-	padding-top: 2px;
-}
-
-.topbar .login:hover .my-account-list {
-	z-index: 301;
-	height: auto;
-	border: 1px solid #d9d9d9;
-	position: absolute;
-	padding-top: 4px;
-	padding-bottom: 6px;
-	background-color: white;
-	top: 40px;
-	left: 0px;
-	display: block;
-	border-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	box-shadow: 1px 1px 1px #ececec;
-}
-
-.topbar .menu_list li {
-	float: initial;
-	width: 80px;
-	text-align: center;
-}
-
-.topbar .menu_list li a {
-	font-size: 14px;
-	display: block;
-	padding-left: 0px;
-	margin-left: 0px;
-	padding-bottom: 0px;
-	border: none;
-	color: black;
-	width: 80px;
-	height: 28px;
-	line-height: 28px;
-}
-
-.topbar .voice:hover .menu_list {
-	margin: 0px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	z-index: 301;
-	height: auto;
-	border: 1px solid #d9d9d9;
-	position: absolute;
-	background-color: white;
-	top: 40px;
-	left: 0px;
-	display: block;
-	border-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	box-shadow: 1px 1px 1px #ececec;
-}
-
-.my-account-list .picpart {
-	padding-left: 20px;
-	background-image: url(../images/hougeloulist.png)/*tpa=http://www.hougelou.com/images/hougeloulist.png*/
-	;
-	background-repeat: no-repeat;
-}
-
-.my-account-list .jiaoluo {
-	background-position: -7px -64px;
-}
-
-.my-account-list .account {
-	background-position: -8px -85px;
-}
-
-.my-account-list .exit {
-	background-position: -7px -105px;
-}
-
-.topbar .login .my-account-list, .topbar .menu_list {
-	display: none;
-}
-
-.topbar .login li {
-	text-align: left;
-	height: 25px;
-	line-height: 25px;
-	list-style: none;
-	width: 90px;
-	padding: 2px 10px;
-}
-
-.login .my-account:hover .mycenter {
-	z-index: 303;
-	text-decoration: none;
-}
-
-.topbar .login .mycenter {
-	max-width: 80px;
-	color: #7d7d7d;
-	position: relative;
-	display: inline-block;
-	padding: 0 10px 0 30px;
-	text-decoration: none;
-	cursor: pointer;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	z-index: 300;
-}
-
-.topbar .login a.mycenter:hover {
-	border: none;
-}
-
-.topbar .login .user_picture {
-	background-image: url(../images/hougeloulist.png)/*tpa=http://www.hougelou.com/images/hougeloulist.png*/
-	;
-	background-position: -6px -47px;
-	width: 16px;
-	height: 16px;
-	position: absolute;
-	left: 10px;
-	top: 14px;
-}
-
-.topbar-wrap .fl {
-	float: left;
-}
-
 .topmenu {
 	margin: 0px;
 	padding: 0px;
 	float: right;
-}
-
-.topbar-wrap .login a {
-	font-size: 14px;
-	color: #7d7d7d;
-	font-weight: normal;
+	margin-right: 50px;
 }
 
 .topmenu a, .topmenu a:focus {
@@ -507,9 +300,10 @@ a.logo:hover {
 	top: 47px;
 	width: 200px;
 	height: 62px;
-	background: url(../images/logosprite.png-v=1.png)/*tpa=http://www.hougelou.com/images/logosprite.png?v=1*/
+	background: url(../images/logosprite.png-v=1.png)
 	no-repeat;
 	background-position: -8px 0px;
+	margin-left: 50px;
 }
 
 .site_one_logo_scroll {
@@ -522,33 +316,6 @@ a.logo:hover {
 	background: url(../images/logosprite.png-v=1.png)/*tpa=http://www.hougelou.com/images/logosprite.png?v=1*/
 	no-repeat;
 	background-position: -8px -72px;
-}
-
-.rtool_menu {
-	position: fixed;
-	right: 10px;
-	bottom: 100px;
-}
-
-.rtool_menu a.rsns {
-	padding-top: 10px;
-}
-
-.rtool_menu a {
-	display: block;
-	width: 40px;
-	height: 38px;
-	border: solid 1px #efefef;
-	margin-top: -1px;
-	color: #8c8785;
-	font-size: 18px;
-	text-align: center;
-	background: #fff;
-	position: relative;
-}
-
-.rtool_menu a i {
-	padding-top: 10px;
 }
 
 #one_gotop {
@@ -580,37 +347,4 @@ a.logo:hover {
 
 #copyright .links {
 	margin-bottom: 16px;
-}
-
-.paginator a[disabled='disabled'] {
-	display: none;
-}
-
-.paginator {
-	margin: 0px;
-	text-align: center;
-}
-
-.paginator a {
-	text-decoration: none;
-	font-weight: normal;
-	font-style: oblique;
-}
-
-.paginator a:visited {
-	padding: 1px 6px;
-	text-decoration: none;
-}
-
-.paginator .cpb {
-	padding: 1px 6px;
-	font-weight: bold;
-	border: none;
-	color: #2F2C2C;
-	font-style: italic;
-}
-
-.paginator a:hover {
-	border-color: #ffdc5e;
-	text-decoration: none;
 }

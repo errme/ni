@@ -41,63 +41,10 @@ i.fa-quote-right
     font-size: 30px;
     color: #dedddd;
 }
-#TodayArticle
-{
-    width: 600px;
-    padding: 30px 50px;
-    background-color: #F8F7F7;
-    color: #333;
-    line-height: 1.67;
-    font-size: 14px;
-    margin: 0 auto;
-}
-
-#TodayArticle .articulo-contenido
-{
-    margin: 15px auto;
-}
-
-#TodayArticle .comilla-cerrar
-{
-    margin-bottom: 20px;
-    border-left: 5px solid #cdcdcd;
-    padding-left: 10px;
-    color: #757575;
-    font-family: sans-serif;
-    background-color: white;
-    padding: 10px;
-}
 
 img
 {
     border: 0;
-}
-
-#TodayArticle
-{
-    width: 600px;
-    padding: 30px 50px;
-    background-color: #F8F7F7;
-    color: #333;
-    line-height: 1.67;
-    font-size: 14px;
-    margin: 0 auto;
-}
-
-#TodayArticle .articulo-contenido
-{
-    margin: 15px auto;
-}
-
-#TodayArticle .comilla-cerrar
-{
-    margin-bottom: 20px;
-    border-left: 5px solid #cdcdcd;
-    padding-left: 10px;
-    color: #757575;
-    font-family: sans-serif;
-    background-color: white;
-    padding: 10px;
 }
 
 img
@@ -117,16 +64,16 @@ img
 {
     width:100%;
 }
-.banner_item
+/* .carousel
 {
     display:none;
     text-decoration:none;
     height: 464px;
 }
-.banner_item:first-child
+.carousel:first-child
 {
     display:block;    
-}
+} */
 .bannner_dot
 {
     margin-top: 20px;
@@ -148,19 +95,20 @@ img
 }
 .topwords
 {
+    width: 100%;
     background-color: #fbfbfb;
     padding: 70px 0px;
 }
 .topw_slogan
 {
     font-size: 30px;
-    margin-left: 28px;
+    
     margin-bottom: 32px;
 }
 .topw_item
 {
     width: 492px;
-    height: 366px;
+    height: 360px;
     float:left;
     margin-left: 28px;
     margin-bottom: 28px;
@@ -171,6 +119,7 @@ img
     color: gray;
     overflow: hidden;
 }
+
 a.topw_item:hover
 {
     box-shadow: 2px 5px 8px 0 #e8e8e8;
@@ -205,7 +154,7 @@ a.topw_item:hover
 .topw_content
 {
     line-height: 1.8em;
-    font-size: 16px;
+    font-size: 15px;
     color: #5d5b5b;
 }
 .w_more
@@ -343,12 +292,3 @@ body.theme-white #footer p {
 a {
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
