@@ -1,0 +1,58 @@
+.bannner_dot
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.bannner_dot .dot_item
+{
+    width: 40px;
+    height: 3px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+.bannner_dot .dot_cur
+{
+        background-color: #c1c1c1;
+}
+.tashuo
+{
+    width: 450px;
+    margin: 160px auto;
+}
+.tashuo_title
+{
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid #dedddd;
+    padding-bottom: 10px;
+    width: 115px;
+    margin: 0px auto;
+    margin-top: 56px;
+}
+.tashuo_content
+{
+    line-height: 1.8em;
+    font-size: 16px;
+    color: black;
+    position:relative;
+}
+i.fa-quote-left
+{
+    position:absolute;
+    top:0px;
+    left: -56px;
+    font-size: 30px;
+    color: #dedddd;
+}
+i.fa-quote-right
+{
+    position:absolute;
+    bottom:0px;
+    right: -56px;
+    font-size: 30px;
+    color: #dedddd;
+}

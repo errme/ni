@@ -1,13 +1,4 @@
-.touming {
-	filter: alpha(opacity=80);
-	-moz-opacity: 0.8;
-	-khtml-opacity: 0.8;
-	opacity: 0.8;
-	background-color: Black;
-	z-index: 20;
-}
-
-div.topbarFixed {
+/* div.topbarFixed {
 	position: fixed;
 	height: 100px;
 	z-index: 1000;
@@ -28,7 +19,7 @@ div.topbarFixed .headMenu {
 
 div.topbarFixed .user_login_div {
 	top: 0px;
-}
+} */
 
 .topbar {
 	width: 100%;
@@ -62,6 +53,7 @@ div.topbarFixed .user_login_div {
 	border-bottom: solid 1px black;
 	color: black;
 	transition: all 0.2s ease-in;
+	text-decoration: none;
 }
 
 a.logo:hover {
@@ -97,8 +89,4 @@ a.logo:hover {
 	background: url(../images/logosprite.png-v=1.png)/*tpa=http://www.hougelou.com/images/logosprite.png?v=1*/
 	no-repeat;
 	background-position: -8px -72px;
-}
-
-#one_gotop {
-	display: none;
 }
