@@ -96,8 +96,8 @@ a.logo:hover {
 
 .moreDiv
 {
-    margin-top:50px;
-    clear: left;
+    
+    margin: 50px auto;
 }
 .moreLoading {
     margin-left: 540px;
