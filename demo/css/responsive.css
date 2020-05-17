@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .grey-bg, .white-bg {
         padding: 40px 0;
     }
@@ -6,7 +6,7 @@
 		width: 100%;
 		padding-top: 95%;
 	}
-}
+} */
 @media screen and (min-width: 1024px) {
     .content-right {
         margin-top: 20px;
@@ -19,6 +19,12 @@
         width: 50%;
         
     }
-
+    .grey-bg, .white-bg {
+        padding: 40px 0;
+    }
+    ul.portfolio-image li{
+		width: 100%;
+		padding-top: 95%;
+	}
 
 }
