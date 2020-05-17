@@ -1,3 +1,4 @@
+
 /* div.topbarFixed {
 	position: fixed;
 	height: 100px;
@@ -38,7 +39,7 @@ div.topbarFixed .user_login_div {
 	margin: 0px;
 	padding: 0px;
 	float: right;
-	margin-right: 50px;
+	margin-right: 3%;
 }
 
 .topmenu a, .topmenu a:focus {
