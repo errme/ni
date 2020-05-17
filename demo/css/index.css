@@ -2,6 +2,10 @@ html,body{
     margin: 0;
     padding: 0;
 }
+/* html{
+    -webkit-filter: grayscale(.95);
+    filter: grayscale(.95);
+} */
 .bannner_dot {
     margin-top: 50px;
     text-align: center;
@@ -338,7 +342,7 @@ a.writing:link {
     right: 0;
     width: 100%;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
     font-family: Consolas;
     padding: 1.25rem 0;
