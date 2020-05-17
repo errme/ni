@@ -11,7 +11,7 @@ function banner() {
 
     var myData = new Array();
     myData[0] = { pc: "./images/521.jpg", mb: "./images/640.png" };
-    myData[1] = { pc: "./images/640.png", mb: "./images/521.jpg" };
+    myData[1] = { pc: "./images/521.jpg", mb: "./images/640.png" };
     myData[2] = { pc: "./images/521.jpg", mb: "./images/640.png" };
     myData[3] = { pc: "./images/521.jpg", mb: "./images/640.png" };
 
