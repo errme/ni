@@ -269,6 +269,9 @@ ul.portfolio-image li .desc {
     .news_title{
         margin: 0 auto;
     }
+    .tab-content .topw_item{
+        margin-left: 30px;
+    }
 }
 
 .heima_icon img {
@@ -279,6 +282,7 @@ ul.portfolio-image li .desc {
     width: 492px;
     height: 360px;
     float: left;
+    margin-top: -10px;
     margin-left: 98px;
     margin-bottom: 20px;
     text-decoration: none;
