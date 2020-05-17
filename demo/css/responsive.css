@@ -26,11 +26,6 @@
         width: 100%;
         padding-top: 95%;
     }
-    .heima_news .news_title {
-        /* margin-top: 20px; */
-        margin-left: 210px;
-        margin-bottom: 20px;
-    }
     .nav-tabs-news {
         display: flex;
         justify-content: flex-start;

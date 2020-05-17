@@ -221,17 +221,8 @@ ul.portfolio-image li .desc {
 .heima_news {
     padding: 20px 0;
 }
-
-.heima_news .news_title {
-    width: 190px;
-    border: 1px solid #ccc;
-    font-size: 20px;
-    height: 50px;
-    margin-top: 150px;
-    margin-left: 90px;
-    line-height: 50px;
-    text-align: center;
-    position: relative;
+.nav-tabs-news{
+    margin-top: -150px;
 }
 
 .nav-tabs-news img {
@@ -250,7 +241,7 @@ ul.portfolio-image li .desc {
 .topw_item {
     width: 499px;
     height: 430px;
-    margin-top: 190px;
+    margin-top: -150px;
     margin-left: 98px;
     margin-bottom: 20px;
     text-decoration: none;
@@ -296,6 +287,9 @@ ul.portfolio-image li .desc {
     color: #5d5b5b;
 }
 
+/* .topw_content p{
+    text-indent: 2em;
+} */
 a.writing:link {
     text-decoration: none;
 }
