@@ -223,7 +223,7 @@ ul.portfolio-image li .desc {
 }
 
 .heima_news .news_title {
-    width: 170px;
+    width: 190px;
     border: 1px solid #ccc;
     font-size: 20px;
     height: 50px;
@@ -250,7 +250,6 @@ ul.portfolio-image li .desc {
 .topw_item {
     width: 499px;
     height: 430px;
-    float: left;
     margin-top: 190px;
     margin-left: 98px;
     margin-bottom: 20px;

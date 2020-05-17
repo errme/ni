@@ -28,16 +28,31 @@
     }
     .heima_news .news_title {
         /* margin-top: 20px; */
-        margin-left: 260px;
+        margin-left: 230px;
+        margin-bottom: 20px;
     }
-    .grey-bg {
-        padding-bottom: 100px;
+    .nav-tabs-news {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -75px;
+    }
+    .nav-tabs-news .tabpage_a {
+        margin-left: 30px;
     }
     .tabpage_a {
         margin-left: 170px;
     }
-    .topw_item{
-        margin-top: -10px;
-        margin-left: 60px;
+    .tabpage_a img{
+        width: 340px;
+        height: 200px;
+    }
+    .grey-bg {
+        padding-bottom: 100px;
+    }
+    .topw_item {
+        margin-top: 20px;
+        margin-left: -90px;
+        width: 710px;
+        height: 360px;
     }
 }
