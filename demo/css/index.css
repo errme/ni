@@ -331,3 +331,17 @@ a.writing:link {
 .topw_item>a:hover {
     box-shadow: 2px 5px 8px 0 #e8e8e8;
 }
+.shuxin{
+    background: #f6f6f6;
+    margin: 70px 0;
+}
+.shuxin_title {
+    padding: 70px 0;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.shuxin_title .cn {
+    font-size: 14px;
+}
