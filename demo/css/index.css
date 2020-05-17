@@ -242,8 +242,9 @@ ul.portfolio-image li .desc {
     margin-top: 50px;
 }
 .nav-tabs-news>li {
+    margin-top: 40px;
     float: left;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
 }
 
 .nav-tabs-news>li>a {
