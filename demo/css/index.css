@@ -357,7 +357,7 @@ a.writing:link {
     white-space: normal
 }
 
-#footer .container p a:after {
+#footer .footer_con p a:after {
     position: absolute;
     bottom: -0.0625rem;
     left: 100%;
@@ -371,7 +371,7 @@ a.writing:link {
     transition: width 450ms, left 450ms
 }
 
-#footer .container p a:hover:after {
+#footer .footer_con p a:hover:after {
     left: 0;
     width: 100%;
     -webkit-transition: width 450ms;
@@ -401,4 +401,8 @@ a.writing:link {
 }
 .footer_con ul li img{
     width: 20px;
+}
+
+.cd-top{
+    z-index: 9;
 }

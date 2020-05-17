@@ -1,5 +1,5 @@
 
-/* div.topbarFixed {
+div.topbarFixed {
 	position: fixed;
 	height: 100px;
 	z-index: 1000;
@@ -20,7 +20,7 @@ div.topbarFixed .headMenu {
 
 div.topbarFixed .user_login_div {
 	top: 0px;
-} */
+}
 
 .topbar {
 	width: 100%;
@@ -87,7 +87,8 @@ a.logo:hover {
 	top: 24px;
 	width: 200px;
 	height: 62px;
-	background: url(../images/logosprite.png-v=1.png)/*tpa=http://www.hougelou.com/images/logosprite.png?v=1*/
+	margin-left: 50px;
+	background: url(../images/logosprite.png-v=1.png)
 	no-repeat;
 	background-position: -8px -72px;
 }

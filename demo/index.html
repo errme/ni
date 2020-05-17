@@ -18,6 +18,7 @@
     <link rel="icon" href="images/me.jpg">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css">
@@ -53,7 +54,6 @@
 </head>
 
 <body>
-
     <div class="topbar">
         <div class="headMenu">
             <a class="site_one_logo" href="index.html">
@@ -239,14 +239,13 @@
                                             <img class="topw_photo" src="./images/233.jpg" />
                                             <div class="wtop_name">子衿</div>
                                         </div>
-                                        <div class="topw_title">把每次偶遇的蓝色都送给你&nbsp;&nbsp;<img src="./images/9.gif"
-                                                alt=""></div>
+                                        <div class="topw_title">印象中的夏天呀&nbsp;&nbsp;<img src="./images/9.gif" alt="">
+                                        </div>
                                         <div class="topw_content">
-                                            <p>说起女孩子啊，不由得先想到好看的裙摆和清澈的笑。</p>
-                                            <p>在最好的年纪笑着跳着，似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。</p>
-                                            <p>若非要找个词来形容，大概是，“春风”？</p>
-                                            <p>可是</p>
-                                            <p>春风十里，还是不如你啊。</p>
+                                            <p>印象中的夏天，在每一个醒来的清晨，抱怨睡眠太少，日子太长。</p>
+                                            <p>印象中的夏天，常常恳请别人帮忙带早餐。</p>
+                                            <p>印象中的夏天，背着书包在铃声响起之前冲进教室，凌乱了自己。</p>
+                                            <p>印象中的夏天，上课忽然走神，想到好玩的事偷笑，或者幻想成功后的自己….然后忽然醒来，问同桌老师讲到哪里了。</p>
                                         </div>
                                     </a>
                                 </li>
@@ -270,7 +269,7 @@
 
         <div class="footer_con">
 
-            <p>Copyright&nbsp;&copy;&nbsp;2019&nbsp;•&nbsp;Theme&nbsp;by&nbsp;:
+            <p>Copyright&nbsp;&copy;&nbsp;2020&nbsp;•&nbsp;Theme&nbsp;by&nbsp;:
                 <a class="posttitle" href="http://errr.me" target="_self">Canger</a>&nbsp;•&nbsp;Run&nbsp;Time&nbsp;:
                 <a class="posttitle" href="" target="_self"><span id="span_dt_dt"></span></a>
             </p>
@@ -305,6 +304,61 @@
         }
         show_date_time();
     </script>
+
+    <script>
+        console.log("\n %c 欢迎来到 http://errr.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
+            "color: white; background: rgba(0,0,0,0.2); padding:5px 0;",
+            "color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");
+
+
+
+        var OriginTitile = document.title,
+            titleTime;
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
+                document.title = "(●—●)喔哟，崩溃啦！";
+                clearTimeout(titleTime)
+            } else {
+                $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
+                document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 2000)
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            //menu
+            var scrollTopVal_head_ = 0;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 0) {
+                    if (!$(".topbar").hasClass("topbarFixed")) {
+                        $(".topbar").addClass("topbarFixed").hide();
+                    }
+                } else {
+                    $(".topbar").removeClass("topbarFixed");
+                }
+
+                if ($(window).scrollTop() <= scrollTopVal_head_) {
+                    //向上滑
+                    $(".topbarFixed").show();
+                } else {
+                    $(".topbarFixed").hide();
+                }
+                scrollTopVal_head_ = $(window).scrollTop();
+            });
+
+        });
+    </script>
+
+    <a href="#0" class="cd-top" title="返回顶部">Top</a>
+
+    <script src="js/jquery.cdtop.min.js"></script>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
