@@ -25,6 +25,18 @@
     ul.portfolio-image li{
 		width: 100%;
 		padding-top: 95%;
-	}
+    }
+    
+    .heima_news .news_title {
+        margin-top: 20px;
+
+    }
+    .ni{
+        text-align: center;
+    }
+    .ni img{
+        width: 500px;
+        margin-left: 30px;
+    }
 
 }
