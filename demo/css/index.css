@@ -218,11 +218,8 @@ ul.portfolio-image li .desc {
     font-weight: 700;
 }
 
-
-
 .heima_news {
     padding: 20px 0;
-    /* background-color: #fbfbfb; */
 }
 
 .heima_news .news_title {
@@ -230,65 +227,31 @@ ul.portfolio-image li .desc {
     border: 1px solid #ccc;
     font-size: 20px;
     height: 50px;
-    margin-top: 220px;
+    margin-top: 150px;
+    margin-left: 90px;
     line-height: 50px;
     text-align: center;
     position: relative;
 }
 
-.ni img{
-    width: 300px;
-    margin-left: -60px;
-    margin-top: 50px;
-}
-.nav-tabs-news>li {
-    margin-top: 40px;
-    float: left;
-    margin-bottom: 90px;
-}
-
-.nav-tabs-news>li>a {
-    margin-right: 0;
-    border: none;
-    height: 60px;
-    line-height: 60px;
-    width: 70px;
-    padding: 0;
-    text-align: center;
+.nav-tabs-news img {
+    width: 350px;
+    height: 200px;
 }
 
 .tab-content {
     padding-top: 30px;
 }
-
-.tab-content li {
-    padding-bottom: 10px;
+.tabpage_a{
+    margin: 30px 0px;
 }
 
-@media screen and (max-width:992px) {
-    .nav-tabs-news>li {
-        width: 25%;
-    }
-    .nav-tabs-news>li>a {
-        margin: 30px 0;
-    }
-    .news_title{
-        margin: 0 auto;
-    }
-    .tab-content .topw_item{
-        margin-left: 30px;
-    }
-}
-
-.heima_icon img {
-    width: 50px;
-}
 
 .topw_item {
-    width: 492px;
-    height: 360px;
+    width: 499px;
+    height: 430px;
     float: left;
-    margin-top: -10px;
+    margin-top: 190px;
     margin-left: 98px;
     margin-bottom: 20px;
     text-decoration: none;
@@ -341,10 +304,12 @@ a.writing:link {
 .topw_item>a:hover {
     box-shadow: 2px 5px 8px 0 #e8e8e8;
 }
-.shuxin{
+
+.shuxin {
     background: #f6f6f6;
     margin-top: 70px;
 }
+
 .shuxin_title {
     padding: 70px 0;
     font-size: 24px;
@@ -356,8 +321,7 @@ a.writing:link {
     font-size: 14px;
 }
 
-.shuxin_title .ni img{
+.shuxin_title .ni img {
     margin: 40px auto;
     width: 50px;
 }
-
