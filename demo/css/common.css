@@ -91,3 +91,51 @@ a.logo:hover {
 	no-repeat;
 	background-position: -8px -72px;
 }
+
+
+
+.moreDiv
+{
+    margin-top:50px;
+    clear: left;
+}
+.moreLoading {
+    margin-left: 540px;
+}
+.more {
+    background-color: #F7F7F7;
+    padding: 5px 35px;
+    border-radius: 30px;
+    margin-left: 500px;
+    color: #060606;
+    font-size: 14px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.more:hover {
+    background-color: #2196F3;
+    color: white;
+}
+.moreDiv a {
+    text-decoration: none;
+}
+
+.moreDiv a:link {
+    text-decoration: none;
+}
+
+.moreDiv a:visited {
+    text-decoration: none;
+}
+
+
+.moreDiv a:hover {
+    text-decoration: none;
+}
+
+
+.moreDiv a:active {
+    text-decoration: none;
+}
