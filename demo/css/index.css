@@ -58,99 +58,143 @@ i.fa-quote-right {
     color: #dedddd;
 }
 
-/* topwords */
+/*  */
+/*  */
 
-.topwords {
-    background-color: #fbfbfb;
-    padding: 70px 0px;
+
+.mar-tm-10{ margin-top: -10px;}
+.grey-bg {
+    background: #f6f6f6;
+    padding: 120px 0;
+    display: block;
+  }
+  .title-small span { position: relative;}
+.title-small span:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 3px;
+  background: #DEDEDE;
+  width: 28px;
+  left: 0;
 }
-
-.topw_slogan
-{
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-left: 13.5%;
+.title-small-center span {position: relative;}
+.title-small-center span:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 3px;
+  background: #DEDEDE;
+  width: 28px;
+  left: 0;
 }
+.content-detail {
+    font-weight: 400;
+    margin-top: 70px;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+  .content-details {
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 30px;
+    font-size: 14px;
+  }
 
-.topw_item {
-    width: 490px;
-    height: 360px;
-    /* margin-left: 28px; */
-    margin-bottom: 28px;
-    text-decoration: none;
-    border: 1px solid #f3f3f3;
-    background-color: White;
-    color: gray;
+  .content-right{ margin-top: 20px; }
+  @media screen and (min-width: 1024px){
+	.content-right {
+	  margin-top: 20px;
+	  padding: 0 20px 0 60px; 
+	}
+}
+ul.portfolio-image {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  ul.portfolio-image li {
+    /* float: left; */
+    display: block;
+    list-style: none;
+    position: relative;
+    display: inline-block;
     overflow: hidden;
-}
-
-@media screen and (min-width:992px) {
-    .topw_item {
-        margin-left: 60px;
-    }
-}
-
-a.topw_item:hover {
-    box-shadow: 2px 5px 8px 0 #e8e8e8;
-}
-
-.topw_photo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 14px;
-    float: left;
-}
-
-.wtop_name {
-    width: 400px;
-    height: 40px;
-    line-height: 40px;
-    color: #b3b1b1;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    margin: 30px;
-}
-
-.topw_title {
-    clear: both;
-    font-size: 24px;
-    margin: 16px 0px;
-    color: black;
-    line-height: 1.6em;
-}
-
-.topw_content {
-    line-height: 1.8em;
-    font-size: 15px;
-    color: #5d5b5b;
-}
-
-.row a {
-    text-decoration: none;
-}
-
-/*正常的未被访问过的链接*/
-
-.row a:link {
-    text-decoration: none;
-}
-
-/*已经访问过的链接*/
-
-.row a:visited {
-    text-decoration: none;
-}
-
-/*鼠标划过(停留)的链接*/
-
-.row a:hover {
-    text-decoration: none;
-}
-
-/* 正在点击的链接*/
-
-.row a:active {
-    text-decoration: none;
+    padding-top: 46%;
+  }
+  ul.portfolio-image li:hover {
+    cursor: pointer;
+  }
+  ul.portfolio-image li:hover img {
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(100%);
+    transform: scale(1.15);
+  }
+  ul.portfolio-image li:hover .image-bg {opacity: 1;}
+  ul.portfolio-image li:hover .description-wrap {
+    background: rgba(186, 186, 186, 0.6);
+  }
+  ul.portfolio-image li img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter, transform, 0.5s;
+  }
+  ul.portfolio-image li .decription-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(242, 242, 242, 0.4);
+    padding: 20px;
+    transition: background, 0.5s;
+  }
+  ul.portfolio-image li .image-bg {
+    color: #2f2f2f;
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 10px 0;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    transition: opacity, 0.5s;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    color: transparent;
+  }
+  ul.portfolio-image li .desc{
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 0;
+    display: table-cell;
+    right: 0;
+    text-align: center;
+    color: #2f2f2f;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  ul.portfolio-image li{
+    width: 100%;
+    padding-top: 95%;
 }

@@ -1,51 +1,96 @@
-.topw_item1
+/* topwords */
+
+.topwords {
+    background-color: #fbfbfb;
+    padding: 70px 0px;
+}
+
+.topw_slogan
 {
-    width: 492px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 13.5%;
+}
+
+.topw_item {
+    width: 490px;
     height: 360px;
-    margin-left: 28px;
+    /* margin-left: 28px; */
     margin-bottom: 28px;
+    text-decoration: none;
     border: 1px solid #f3f3f3;
-    padding:20px;
-    background-color:White;
+    background-color: White;
     color: gray;
     overflow: hidden;
 }
-.container{
-    width: 1096px;
+
+@media screen and (min-width:992px) {
+    .topw_item {
+        margin-left: 60px;
+    }
 }
-a.topw_item:hover
-{
+
+a.topw_item:hover {
     box-shadow: 2px 5px 8px 0 #e8e8e8;
 }
-.topw_photo
-{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-right:14px;
-        
+
+.topw_photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 14px;
+    float: left;
 }
-.wtop_name
-{
+
+.wtop_name {
     width: 400px;
     height: 40px;
-    line-height:40px;
+    line-height: 40px;
     color: #b3b1b1;
-    overflow:hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    margin: 30px;
 }
-.topw_title
-{
+
+.topw_title {
+    clear: both;
     font-size: 24px;
     margin: 16px 0px;
     color: black;
     line-height: 1.6em;
 }
-.topw_content
-{
+
+.topw_content {
     line-height: 1.8em;
     font-size: 15px;
     color: #5d5b5b;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+/*正常的未被访问过的链接*/
+
+.row a:link {
+    text-decoration: none;
+}
+
+/*已经访问过的链接*/
+
+.row a:visited {
+    text-decoration: none;
+}
+
+/*鼠标划过(停留)的链接*/
+
+.row a:hover {
+    text-decoration: none;
+}
+
+/* 正在点击的链接*/
+
+.row a:active {
+    text-decoration: none;
 }
