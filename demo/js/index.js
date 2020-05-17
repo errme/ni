@@ -5,7 +5,7 @@ $(function () {
 function banner() {
     var isMobile = false;
     var width = $(window).width();
-    if (width <= 768) {
+    if (width <= 992) {
         isMobile = true;
     }
 
