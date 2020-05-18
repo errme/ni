@@ -4,7 +4,8 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
 
 
     <meta name="author" content="苍耳">
@@ -53,6 +54,7 @@
 </head>
 
 <body>
+    <!-- 导航栏 -->
     <div class="topbar">
         <div class="headMenu">
             <a class="site_one_logo" href="index.html">
@@ -61,14 +63,15 @@
             </a>
             <ul class="topmenu">
                 <li><a href="index.html" class="zahuoMenu">草长莺飞</a></li>
-                <li><a href="index.html" class="zhilouMenu">清风月明</a></li>
+                <li><a href="#ta" class="zhilouMenu">清风月明</a></li>
                 <li><a href="index.html" class="shuxinMenu">人间情书</a></li>
                 <li><a href="index.html">星河滚烫</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="banner_div">
+    <!-- 轮播图 -->
+    <div class="banner">
 
         <div id="slidershow" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -77,7 +80,6 @@
             <div class="carousel-inner">
 
             </div>
-            <!-- 控制器 在轮播图下面 -->
             <a href="#slidershow" class="left carousel-control" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
@@ -98,6 +100,7 @@
 
     </div>
 
+    <!-- tashou -->
     <div class="tashuo">
         <div class="tashuo_content">
             <i class="quote-before fa fa-quote-left"></i>
@@ -110,7 +113,12 @@
         <div class="tashou_bottom"></div>
     </div>
 
-    <section class="grey-bg">
+    <!-- 第一人称 -->
+    <div class="me">
+        <div class="you_title">
+            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第一人称</span><br>
+            <img src="./images/1.gif">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -127,7 +135,6 @@
                     </p>
                 </div>
                 <div class="col-md-9 content-right">
-                    <!--PORTFOLIO IMAGE-->
                     <ul class="portfolio-image">
                         <li class="col-md-6 col-sm-12">
                             <a href="images/bw-1.png"><img alt="image" src="./images/bw-1.png">
@@ -139,7 +146,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="col-md-6 col-sm-12">
+                        <li class="col-md-6 hidden-sm">
                             <a href="images/bw-2.png"><img alt="image" src="./images/bw-1.png">
                                 <div class="decription-wrap">
                                     <div class="image-bg">
@@ -150,41 +157,17 @@
                                 </div>
                             </a>
                         </li>
-
-                        <li class="col-md-6 hidden-sm">
-                            <a href="images/bw-5.png"><img alt="image" src="images/bw-1.png">
-                                <div class="decription-wrap">
-                                    <div class="image-bg">
-                                        <p class="desc">
-                                            胶卷艺术
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-md-6 hidden-sm">
-                            <a href="images/bw-6.png"><img alt="image" src="images/bw-1.png">
-                                <div class="decription-wrap">
-                                    <div class="image-bg">
-                                        <p class="desc">
-                                            胶卷艺术
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
                     </ul>
-                    <!--/.PORTFOLIO IMAGE END-->
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <div class="heima_news">
-        <div class="shuxin_title">
-            <span class="en">书信</span>
-            <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第二人称</span><br>
-            <span class="ni"><img src="./images/777.gif"></span>
+    <!-- 第二人称 -->
+    <div class="ni">
+        <div class="you_title">
+            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第三人称</span><br>
+            <img src="./images/777.gif">
         </div>
         <div class="container">
             <dir class="row">
@@ -213,10 +196,10 @@
                             <ul>
                                 <li class="topw_item">
                                     <a class="writing" href="" target="_blank">
-                                        <div class="box">
-                                            <img class="topw_photo" src="./images/me.jpg" />
-                                            <div class="wtop_name">苍耳</div>
-                                        </div>
+
+                                        <img class="topw_photo" src="./images/me.jpg" />
+                                        <div class="wtop_name">苍耳</div>
+
                                         <div class="topw_title">把每次偶遇的蓝色都送给你&nbsp;&nbsp;<img src="./images/9.gif"
                                                 alt=""></div>
                                         <div class="topw_content">
@@ -258,13 +241,16 @@
     </div>
     </div>
 
-    <div class="shuxin">
-        <div class="shuxin_title box">
+    <!-- 第三人称 -->
+    <div class="ta">
+        <div class="you_title">
             <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第三人称</span><br>
             <img src="./images/1.gif">
         </div>
 
     </div>
+
+    <!-- footer -->
     <footer id="footer">
 
         <div class="footer_con">
@@ -275,11 +261,9 @@
             </p>
             <ul>
                 <li><a href="#"><img src="./images/github.png" alt=""></a></li>
-                <li><a href="#"><img src="./images/QQ.png" alt=""></a></li>
-                <li><a href="#"><img src="./images/wechat.png" alt=""></a></li>
-                <li><a href="#"><img src="./images/telegram.png" alt=""></a></li>
+                <!-- <li><a href="#"><img src="./images/telegram.png" alt=""></a></li>
                 <li><a href="#"><img src="./images/bilibili-line.png" alt=""></a></li>
-                <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/twitter.png" alt=""></a></li> -->
             </ul>
         </div>
 

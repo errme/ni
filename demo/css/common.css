@@ -1,142 +1,15 @@
-
-div.topbarFixed {
-	position: fixed;
-	height: 100px;
-	z-index: 1000;
-	top: 0px;
+.you_title {
+    padding: 70px 0;
+    font-size: 24px;
+    text-align: center;
 }
 
-.topbarFixed .site_one_logo {
-	display: none;
-}
-
-.topbarFixed .site_one_logo_scroll {
-	display: block;
-}
-
-div.topbarFixed .headMenu {
-	padding-top: 30px;
-}
-
-div.topbarFixed .user_login_div {
-	top: 0px;
-}
-
-.topbar {
-	width: 100%;
-	height: 164px;
-	background-color: white;
-}
-
-.topbar .headMenu {
-	height: 46px;
-	line-height: 46px;
-	padding-top: 54px;
-	position: relative;
-}
-
-.topmenu {
-	margin: 0px;
-	padding: 0px;
-	float: right;
-	margin-right: 3%;
-}
-
-.topmenu a, .topmenu a:focus {
-	color: #040404;
-	font-size: 18px;
-	margin-left: 26px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid white;
-}
-
-.topmenu a:hover {
-	border-bottom: solid 1px black;
-	color: black;
-	transition: all 0.2s ease-in;
-	text-decoration: none;
-}
-
-a.logo:hover {
-	opacity: 0.3;
-	transition: all 0.2s ease-in;
-}
-
-.topmenu li {
-	list-style: none;
-	float: left;
-	text-align: center;
-}
-
-.site_one_logo {
-	position: absolute;
-	left: 0px;
-	top: 47px;
-	width: 200px;
-	height: 62px;
-	background: url(../images/logosprite.png-v=1.png)
-	no-repeat;
-	background-position: -8px 0px;
-	margin-left: 50px;
-}
-
-.site_one_logo_scroll {
-	display: none;
-	position: absolute;
-	left: 0px;
-	top: 24px;
-	width: 200px;
-	height: 62px;
-	margin-left: 50px;
-	background: url(../images/logosprite.png-v=1.png)
-	no-repeat;
-	background-position: -8px -72px;
-}
-
-
-
-.moreDiv
-{
-    
-    margin: 50px auto;
-}
-.moreLoading {
-    margin-left: 540px;
-}
-.more {
-    background-color: #F7F7F7;
-    padding: 5px 35px;
-    border-radius: 30px;
-    margin-left: 500px;
-    color: #060606;
+.you_title .cn {
     font-size: 14px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.more:hover {
-    background-color: #2196F3;
-    color: white;
-}
-.moreDiv a {
-    text-decoration: none;
 }
 
-.moreDiv a:link {
-    text-decoration: none;
-}
-
-.moreDiv a:visited {
-    text-decoration: none;
-}
-
-
-.moreDiv a:hover {
-    text-decoration: none;
-}
-
-
-.moreDiv a:active {
-    text-decoration: none;
+.you_title img {
+    margin-top: 60px;
+    margin-bottom: 120px;
+    width: 50px;
 }
