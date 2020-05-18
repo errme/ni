@@ -84,11 +84,12 @@ a.logo:hover {
 
 .site_one_logo {
     position: absolute;
-    left: 0px;
+    left: 140px;
     top: 47px;
     width: 240px;
     height: 72px;
-    background: url(../images/logo9.png) no-repeat;
+    margin-left: 190px;
+    background: url(../images/logo6.png) no-repeat;
     background-position: -8px 0px;
     margin-left: 50px;
 }
@@ -98,10 +99,10 @@ a.logo:hover {
     position: absolute;
     left: 0px;
     top: 24px;
-    width: 200px;
+    width: 240px;
     height: 62px;
-    margin-left: 50px;
-    background: url(../images/logo9.png) no-repeat;
+    margin-left: 190px;
+    background: url(../images/logo6.png) no-repeat;
     background-position: -8px -72px;
 }
 

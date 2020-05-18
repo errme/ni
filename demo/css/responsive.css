@@ -6,6 +6,12 @@
 }
 
 @media screen and (max-width: 992px) {
+    .site_one_logo{
+        left: 20px;
+    }
+    .site_one_logo_scroll{
+        margin-left: 80px;
+    }
     .portfolio-image>li {
         width: 50%;
     }
