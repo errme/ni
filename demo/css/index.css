@@ -34,15 +34,20 @@ html,body{
 
 .tashuo_title {
     font-size: 24px;
+    height: 50px;
     color: black;
     text-align: center;
-    border-bottom: 1px solid #dedddd;
     padding-bottom: 10px;
-    width: 115px;
+
     margin: 0px auto;
     margin-top: 56px;
 }
-
+.tashou_bottom{
+    text-align: center;
+    border-bottom: 1px solid #dedddd;
+    width: 115px;
+    margin: 0px auto;
+}
 .tashuo_content {
     line-height: 1.8em;
     font-size: 16px;
