@@ -462,3 +462,70 @@ a.writing:link {
 .footer_con ul li img {
     width: 20px;
 }
+
+#primary {
+    position: relative;
+  }
+  .post {
+    margin: 100px auto 0;
+    width: 1200px;
+    position: relative;
+  }
+  
+  .post>a {
+    display: inline-block;
+    width: 680px;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .else {
+    position: absolute;
+    background: #fff;
+    text-align: left;
+    top: 20px;
+    height: 398px;
+    width: 498px;
+    border: 1px solid #eaeaea;
+  }
+  
+  .post:nth-child(odd) {
+    text-align: left;
+  }
+  
+  .post:nth-child(even) {
+    text-align: right;
+  }
+  
+  .post:nth-child(odd) .else {
+    left: 660px;
+  }
+  
+  .post:nth-child(even) .else {
+    right: 660px;
+  }
+  
+  .else p:first-child {
+    color: #999;
+    font-size: 12px;
+    margin: 80px 0 0 80px;
+  }
+  
+  .else h3 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 10px 100px 0 80px;
+  }
+  
+  .else h3 a {
+    color: #333;
+  }
+  
+  .else h3+p {
+    color: #555;
+    margin: 10px 100px 0 80px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
