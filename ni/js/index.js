@@ -44,3 +44,8 @@ function banner() {
         });
     });
 })(jQuery);
+
+// console
+console.log("\n %c 欢迎来到 http://errr.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
+    "color: white; background: rgba(0,0,0,0.2); padding:5px 0;",
+    "color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");

@@ -1,13 +1,14 @@
+<!--
+代码如诗 , 如痴如醉 !
+-->
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
     <meta name="author" content="苍耳">
     <meta name="keywords" content="一期一会,草长莺飞">
     <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
@@ -18,7 +19,6 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css">
 
@@ -101,6 +101,7 @@
     </div>
 
     <!-- tashou -->
+    <!-- 打字机 -->
     <div class="tashuo">
         <div class="tashuo_content">
             <i class="quote-before fa fa-quote-left"></i>
@@ -114,6 +115,7 @@
     </div>
 
     <!-- 第一人称 -->
+    <!-- 栅格系统 -->
     <div class="me">
         <div class="you_title">
             <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第一人称</span><br>
@@ -164,6 +166,7 @@
     </div>
 
     <!-- 第二人称 -->
+    <!-- 标签页 -->
     <div class="ni">
         <div class="you_title">
             <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第二人称</span><br>
@@ -242,6 +245,7 @@
     </div>
 
     <!-- 第三人称 -->
+    <!-- 响应式 -->
     <div class="ta">
         <div class="you_title">
             <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第三人称</span><br>
@@ -303,6 +307,33 @@
         </div>
 
     </footer>
+
+    <!-- 向上滑显示banner -->
+    <script>
+        $(function () {
+            //menu
+            var scrollTopVal_head_ = 0;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 0) {
+                    if (!$(".topbar").hasClass("topbarFixed")) {
+                        $(".topbar").addClass("topbarFixed").hide();
+                    }
+                } else {
+                    $(".topbar").removeClass("topbarFixed");
+                }
+
+                if ($(window).scrollTop() <= scrollTopVal_head_) {
+                    //向上滑
+                    $(".topbarFixed").show();
+                } else {
+                    $(".topbarFixed").hide();
+                }
+                scrollTopVal_head_ = $(window).scrollTop();
+            });
+        });
+    </script>
+
+    <!-- run time -->
     <script>
         function show_date_time() {
             window.setTimeout("show_date_time()", 1000);
@@ -324,15 +355,9 @@
         show_date_time();
     </script>
 
+    <!-- 离开网页时title -->
     <script>
-        console.log("\n %c 欢迎来到 http://errr.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
-            "color: white; background: rgba(0,0,0,0.2); padding:5px 0;",
-            "color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");
-
-
-
-        var OriginTitile = document.title,
-            titleTime;
+        var OriginTitile = document.title, titleTime;
         document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
                 $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
@@ -347,31 +372,8 @@
             }
         });
     </script>
-    <script type="text/javascript">
-        $(function () {
-            //menu
-            var scrollTopVal_head_ = 0;
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 0) {
-                    if (!$(".topbar").hasClass("topbarFixed")) {
-                        $(".topbar").addClass("topbarFixed").hide();
-                    }
-                } else {
-                    $(".topbar").removeClass("topbarFixed");
-                }
 
-                if ($(window).scrollTop() <= scrollTopVal_head_) {
-                    //向上滑
-                    $(".topbarFixed").show();
-                } else {
-                    $(".topbarFixed").hide();
-                }
-                scrollTopVal_head_ = $(window).scrollTop();
-            });
-
-        });
-    </script>
-
+    <!-- 返回顶部插件 -->
     <a href="#0" class="cd-top" title="返回顶部">Top</a>
 
     <script src="js/jquery.cdtop.min.js"></script>
