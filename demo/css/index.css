@@ -465,16 +465,29 @@ a.writing:link {
 .footer_con ul li img {
     width: 20px;
 }
-.primary{
+
+.ta_article {
+    padding-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ta_article:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 200%;
+    position: absolute;
+    left: 50%;
+    background: #eaeaea;
+    top: -50%;
+    z-index: 0;
+}
+
+.primary {
     margin-top: -190px;
 }
-.pri{
-    width: 1px;
-    border: 0.2px solid #eaeaea;
-    float: left;
-    height: 50px;
-    margin-left: 50%;
-}
+
 .post {
     margin: 100px auto 0;
     width: 1200px;
