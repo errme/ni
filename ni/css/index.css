@@ -585,11 +585,11 @@ a.writing:link {
 }
 
 .pio-container{
-    margin-right: 70px;
-    margin-bottom: 50px;
+    margin-right: 70;
+    margin-bottom: 50;
     z-index: 99;
 }
 .pio{
-    width: 120px;
+    width: 120;
     height: 70;
 }
