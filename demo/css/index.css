@@ -87,9 +87,9 @@ a.logo:hover {
     left: 140px;
     top: 47px;
     width: 240px;
-    height: 72px;
+    height: 70px;
     margin-left: 190px;
-    background: url(../images/logo6.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     background-position: -8px 0px;
     margin-left: 50px;
 }
@@ -102,7 +102,7 @@ a.logo:hover {
     width: 240px;
     height: 62px;
     margin-left: 190px;
-    background: url(../images/logo6.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     background-position: -8px -72px;
 }
 
