@@ -105,6 +105,8 @@
     
       .post>a img {
         margin: 0 auto;
+        width: 939px;
+        height: 600px;
       }
     
       .else {

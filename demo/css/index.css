@@ -67,7 +67,8 @@ div.topbarFixed .user_login_div {
     transition: all 0.2s ease-in;
     text-decoration: none;
 }
-.topmenu a:link{
+
+.topmenu a:link {
     text-decoration: none;
 }
 
@@ -181,9 +182,11 @@ i.fa-quote-right {
     display: block;
     margin-top: -10px;
 }
-.me .container{
+
+.me .container {
     margin-top: -90px;
 }
+
 .title-small span {
     position: relative;
 }
@@ -462,26 +465,32 @@ a.writing:link {
 .footer_con ul li img {
     width: 20px;
 }
-
+.primary{
+    margin-top: -190px;
+}
 .post {
     margin: 100px auto 0;
     width: 1200px;
     position: relative;
     z-index: 4;
-  }
-  .cover{
-      z-index: 3;
-  }
-  .post>a {
+}
+
+.cover {
+    z-index: 3;
+    width: 680px;
+    height: 440px;
+}
+
+.post>a {
     display: inline-block;
     width: 680px;
     height: 440px;
     overflow: hidden;
     position: relative;
     z-index: 3;
-  }
-  
-  .else {
+}
+
+.else {
     position: absolute;
     background: #fff;
     text-align: left;
@@ -490,43 +499,43 @@ a.writing:link {
     width: 498px;
     border: 1px solid #eaeaea;
     z-index: 2;
-  }
-  
-  .post:nth-child(odd) {
+}
+
+.post:nth-child(odd) {
     text-align: left;
-  }
-  
-  .post:nth-child(even) {
+}
+
+.post:nth-child(even) {
     text-align: right;
-  }
-  
-  .post:nth-child(odd) .else {
+}
+
+.post:nth-child(odd) .else {
     left: 660px;
-  }
-  
-  .post:nth-child(even) .else {
+}
+
+.post:nth-child(even) .else {
     right: 660px;
-  }
-  
-  .else p:first-child {
+}
+
+.else p:first-child {
     color: #999;
     font-size: 12px;
     margin: 80px 0 0 80px;
-  }
-  
-  .else h3 {
+}
+
+.else h3 {
     font-size: 30px;
     line-height: 1.1;
     margin: 10px 100px 0 80px;
-  }
-  
-  .else h3 a {
+}
+
+.else h3 a {
     color: #333;
-  }
-  
-  .else h3+p {
+}
+
+.else h3+p {
     color: #555;
     margin: 10px 100px 0 80px;
     font-size: 14px;
     line-height: 1.8;
-  }
+}
