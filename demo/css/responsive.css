@@ -1,41 +1,35 @@
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
     .post {
         width: 900px;
-      }
-    
-      .post>a {
+    }
+    .post>a {
         width: 480px;
         height: 310px;
-      }
-    
-      .else {
+    }
+    .else {
         top: 10px;
         width: 420px;
         height: 290px;
-      }
-    
-      .post:nth-child(odd) .else {
+    }
+    .post:nth-child(odd) .else {
         left: 450px;
-      }
-    
-      .post:nth-child(even) .else {
+    }
+    .post:nth-child(even) .else {
         right: 450px;
-      }
-    
-      .else p:first-child {
+    }
+    .else p:first-child {
         font-size: 12px;
         margin: 50px 0 0 60px;
-      }
-    
-      .else h3 {
+    }
+    .else h3 {
         font-size: 24px;
         margin: 10px 60px 0 60px;
-      }
-    
-      .else h3+p {
+    }
+    .else h3+p {
         margin: 10px 60px 0 60px;
-      }
+    }
 }
+
 @media screen and (min-width: 1024px) {
     .content-right {
         margin-top: 20px;
@@ -44,10 +38,10 @@
 }
 
 @media screen and (max-width: 992px) {
-    .site_one_logo{
+    .site_one_logo {
         left: 20px;
     }
-    .site_one_logo_scroll{
+    .site_one_logo_scroll {
         margin-left: 80px;
     }
     .portfolio-image>li {
@@ -84,47 +78,38 @@
         width: 710px;
         height: 360px;
     }
-    #footer {
-        font-size: 2rem;
-    }
-
     .post {
         width: 100%;
         margin-top: 60px;
         background: #fff;
         padding-bottom: 30px;
         border-bottom: 1px solid #eaeaea;
-      }
-    
-      .post>a {
+    }
+    .post>a {
         display: block;
         margin: 0 auto;
         width: 100%;
         height: auto;
-      }
-    
-      .post>a img {
+    }
+    .post>a img {
         margin: 0 auto;
         width: 992px;
         height: 600px;
-      }
-    
-      .else {
+    }
+    .else {
         height: auto;
         position: static;
         width: 100%;
         margin: 0 auto;
         background: transparent;
         border: none;
-      }
-      .post:nth-child(odd) {
+    }
+    .post:nth-child(odd) {
         text-align: center;
     }
-    
     .post:nth-child(even) {
         text-align: center;
     }
-    
     /* .post:nth-child(odd) .else {
         left: 660px;
     }
@@ -132,20 +117,21 @@
     .post:nth-child(even) .else {
         right: 660px;
     } */
-      .else p:first-child {
+    .else p:first-child {
         margin: 30px 0 0 20px;
-      }
-    
-      .else h3 {
+    }
+    .else h3 {
         font-size: 24px;
         margin: 10px 30px 0 20px;
-      }
-    
-      .else h3+p {
+    }
+    .else h3+p {
         margin: 10px 30px 0 20px;
-      }
-      .cd-top{
-          margin-right: 50px;
-          margin-bottom: 30px;
-      }
+    }
+    #footer {
+        font-size: 2rem;
+    }
+    .cd-top {
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
 }
