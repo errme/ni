@@ -80,6 +80,9 @@
         height: 360px;
     }
     /*  */
+    /* .ta_article:before {
+        display: none;
+    } */
     .ta_article {
         padding-bottom: 50px;
     }
