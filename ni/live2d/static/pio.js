@@ -286,5 +286,5 @@ var pio = new Paul_Pio({
         ]
     },
     "night": "single.night()",
-    "model": ["https://paugram.com/usr/plugins/Pio/models/yuan/model.json"]
+    "model": ["http://errr.me/live2d/models/pio/model.json"]
 });
