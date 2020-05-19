@@ -468,6 +468,13 @@ a.writing:link {
 .primary{
     margin-top: -190px;
 }
+.pri{
+    width: 1px;
+    border: 0.2px solid #eaeaea;
+    float: left;
+    height: 50px;
+    margin-left: 50%;
+}
 .post {
     margin: 100px auto 0;
     width: 1200px;

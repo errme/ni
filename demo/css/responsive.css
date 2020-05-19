@@ -117,7 +117,21 @@
         background: transparent;
         border: none;
       }
+      .post:nth-child(odd) {
+        text-align: center;
+    }
     
+    .post:nth-child(even) {
+        text-align: center;
+    }
+    
+    /* .post:nth-child(odd) .else {
+        left: 660px;
+    }
+    
+    .post:nth-child(even) .else {
+        right: 660px;
+    } */
       .else p:first-child {
         margin: 30px 0 0 20px;
       }
