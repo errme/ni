@@ -1,3 +1,41 @@
+@media screen and (max-width:1200px){
+    .post {
+        width: 900px;
+      }
+    
+      .post>a {
+        width: 480px;
+        height: 310px;
+      }
+    
+      .else {
+        top: 10px;
+        width: 420px;
+        height: 290px;
+      }
+    
+      .post:nth-child(odd) .else {
+        left: 450px;
+      }
+    
+      .post:nth-child(even) .else {
+        right: 450px;
+      }
+    
+      .else p:first-child {
+        font-size: 12px;
+        margin: 50px 0 0 60px;
+      }
+    
+      .else h3 {
+        font-size: 24px;
+        margin: 10px 60px 0 60px;
+      }
+    
+      .else h3+p {
+        margin: 10px 60px 0 60px;
+      }
+}
 @media screen and (min-width: 1024px) {
     .content-right {
         margin-top: 20px;

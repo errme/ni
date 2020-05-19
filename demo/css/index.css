@@ -463,15 +463,15 @@ a.writing:link {
     width: 20px;
 }
 
-#primary {
-    position: relative;
-  }
-  .post {
+.post {
     margin: 100px auto 0;
     width: 1200px;
     position: relative;
+    z-index: 4;
   }
-  
+  .cover{
+      z-index: 3;
+  }
   .post>a {
     display: inline-block;
     width: 680px;
@@ -489,6 +489,7 @@ a.writing:link {
     height: 398px;
     width: 498px;
     border: 1px solid #eaeaea;
+    z-index: 2;
   }
   
   .post:nth-child(odd) {
