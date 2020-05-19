@@ -583,3 +583,13 @@ a.writing:link {
     width: 20px;
     margin-left: -30px;
 }
+
+.pio-container{
+    margin-right: 70px;
+    margin-bottom: 50px;
+    z-index: 99;
+}
+.pio{
+    width: 120px;
+    height: 70;
+}
