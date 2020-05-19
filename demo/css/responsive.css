@@ -38,6 +38,7 @@
 }
 
 @media screen and (max-width: 992px) {
+    /*  */
     .site_one_logo {
         left: 20px;
     }
@@ -77,6 +78,10 @@
         margin-left: -90px;
         width: 710px;
         height: 360px;
+    }
+    /*  */
+    .ta_article {
+        padding-bottom: 50px;
     }
     .post {
         width: 100%;
@@ -127,9 +132,11 @@
     .else h3+p {
         margin: 10px 30px 0 20px;
     }
+    /*  */
     #footer {
         font-size: 2rem;
     }
+    /*  */
     .cd-top {
         margin-right: 50px;
         margin-bottom: 30px;
