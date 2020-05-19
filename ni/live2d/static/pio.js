@@ -286,5 +286,5 @@ var pio = new Paul_Pio({
         ]
     },
     "night": "single.night()",
-    "model": ["http://errr.me/ni/live2d/models/pio/model.json"]
+    "model": ["http://errr.me/ni/live2d/models/model.json"]
 });
