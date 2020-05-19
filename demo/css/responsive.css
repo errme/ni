@@ -105,7 +105,7 @@
     
       .post>a img {
         margin: 0 auto;
-        width: 939px;
+        width: 950px;
         height: 600px;
       }
     
@@ -129,5 +129,9 @@
     
       .else h3+p {
         margin: 10px 30px 0 20px;
+      }
+      .cd-top{
+          margin-right: 50px;
+          margin-bottom: 30px;
       }
 }
