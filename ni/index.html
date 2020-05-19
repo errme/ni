@@ -8,8 +8,7 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
     <meta name="author" content="苍耳">
     <meta name="keywords" content="一期一会,草长莺飞">
     <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
@@ -21,7 +20,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./live2d/css/live2d.css">
     <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.css">
 
     <script src="./lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
@@ -292,30 +290,6 @@
         </div>
     </div>
 
-    <div id="landlord" style="left:5px;bottom:0px;z-index: 99;">
-        <div class="message" style="opacity:0"></div>
-        <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
-        <div class="live_talk_input_body">
-            <div class="live_talk_input_name_body">
-                <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
-                    placeholder="你的名字" />
-            </div>
-            <div class="live_talk_input_text_body">
-                <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
-                    placeholder="要和我聊什么呀？" />
-                <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
-            </div>
-        </div>
-        <input name="live_talk" id="live_talk" value="1" type="hidden" />
-        <div class="live_ico_box">
-            <div class="live_ico_item type_info" id="showInfoBtn"></div>
-            <div class="live_ico_item type_talk" id="showTalkBtn"></div>
-            <div class="live_ico_item type_quit" id="hideButton"></div>
-            <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
-        </div>
-    </div>
-    <div id="open_live2d">召唤伊斯特瓦尔</div>
-
     <!-- footer -->
     <footer id="footer">
 
@@ -405,14 +379,6 @@
     <script src="js/jquery.cdtop.min.js"></script>
 
     <script src="js/main.js"></script>
-
-    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>
-        var message_Path = '/live2d/';//资源目录，如果目录不对请更改
-        var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
-    </script>
-    <script type="text/javascript" src="./live2d/js/live2d.js"></script>
-    <script type="text/javascript" src="./live2d/js/message.js"></script>
 
 </body>
 
