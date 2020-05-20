@@ -1,0 +1,65 @@
+.topbar .navbar-nav>li>a {
+    height: 70px;
+    line-height: 60px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.topbar .navbar-nav>li>a:hover, .topbar .navbar-nav>li>a:focus {
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+}
+
+.topbar .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.topbar .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.topbar .topmenu {
+    float: right;
+    margin-right: -3%;
+    margin-top: 3%;
+}
+
+.site_one_logo {
+    position: absolute;
+    left: 140px;
+    top: 47px;
+    width: 240px;
+    height: 70px;
+    /* margin-left: 190px; */
+    background: url(../images/logo.png) no-repeat;
+    background-position: -8px 0px;
+    margin-left: 50px;
+}
+
+.site_one_logo_scroll {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 24px;
+    width: 240px;
+    height: 62px;
+    margin-left: 190px;
+    background: url(../images/logo.png) no-repeat;
+    background-position: -8px -72px;
+}
+
+@media screen and (max-width:768px) {
+    .topbar .topmenu {
+        margin-right: 39%;
+    }
+    .site_one_logo {
+        margin-left: -100px;
+        margin-top: -30px;
+    }
+    .topbar .navbar-nav>li>a {
+        height: 50px;
+        line-height: 40px;
+    }
+}

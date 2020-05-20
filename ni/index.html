@@ -8,7 +8,7 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
     <meta name="author" content="苍耳">
     <meta name="keywords" content="一期一会,草长莺飞">
     <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
@@ -56,20 +56,28 @@
 
 <body class="nig">
     <!-- 导航栏 -->
-    <div class="topbar">
-        <div class="headMenu">
+    <nav class="navbar topbar" role="navigation">
+        <div class="container headMenu">
             <a class="site_one_logo" href="index.html">
             </a>
             <a class="site_one_logo_scroll" href="index.html">
             </a>
-            <ul class="topmenu">
-                <li><a href="index.html" class="zahuoMenu">草长莺飞</a></li>
-                <li><a href="#ta" class="zhilouMenu">清风月明</a></li>
-                <li><a href="index.html" class="shuxinMenu">人间情书</a></li>
-                <li><a href="index.html">星河滚烫</a></li>
-            </ul>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-collapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav topmenu">
+                    <li><a href="#" class="active">我要投资</a></li>
+                    <li><a href="#">我要借贷</a></li>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">关于新生</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
     
 
     <!-- 轮播图 -->
