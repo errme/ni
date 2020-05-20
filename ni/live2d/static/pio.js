@@ -274,7 +274,8 @@ if (window.console && window.console.log) {
 }
 
 var pio = new Paul_Pio({
-    "mode": "fixed",
+    // static fixed draggable
+    "mode": "draggable",
     "hidden": false,
     "tips":true,
     "content": {
@@ -284,7 +285,8 @@ var pio = new Paul_Pio({
             {"selector": ".home-social a:last-child", "text": "在这里可以了解博主的日常噢~"},
             {"selector": ".post-item a", "type": "read"},
             {"selector": ".post-content a, .page-content a", "type": "link"}
-        ]
+        ],
+        "link":["http://errr.me"]
     },
     "night": "single.night()",
     "model": ["http://errr.me/ni/live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
