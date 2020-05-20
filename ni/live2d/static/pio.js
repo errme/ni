@@ -276,6 +276,7 @@ if (window.console && window.console.log) {
 var pio = new Paul_Pio({
     "mode": "fixed",
     "hidden": false,
+    "tips":true,
     "content": {
         "welcome": ["欢迎来到一期一会！", "今天天气不错，一起来玩吧！", "多说不易 不解风情，多说不易 不解风情，多说不易 不解风情"],
         "custom": [
@@ -286,5 +287,5 @@ var pio = new Paul_Pio({
         ]
     },
     "night": "single.night()",
-    "model": ["http://errr.me/ni/live2d/models/model.json"]
+    "model": ["http://errr.me/ni/live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
 });
