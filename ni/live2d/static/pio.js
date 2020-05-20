@@ -130,7 +130,7 @@ var Paul_Pio = function (prop) {
         // 触摸
         touch: function () {
             current.canvas.onclick = function () {
-                modules.render(prop.content.touch || ["你在干什么？", "再摸我就报警了！", "HENTAI!", "不可以这样欺负我啦！"]);
+                modules.render(prop.content.touch || ["你在干什么？", "再摸我就报警了！", "Hentai!", "不可以这样欺负我啦！"]);
             };
         },
         // 右侧按钮
@@ -277,17 +277,18 @@ var pio = new Paul_Pio({
     // static fixed draggable
     "mode": "draggable",
     "hidden": false,
-    "tips":true,
+    "tips":false,
     "content": {
-        "welcome": ["欢迎来到一期一会！", "今天天气不错，一起来玩吧！", "多说不易 不解风情，多说不易 不解风情，多说不易 不解风情"],
+        "welcome": ["欢迎来到一期一会！", "今天天气不错，一起来玩吧！", "多说不易 不解风情，多说不易 不解风情"],
         "custom": [
             {"selector": ".tabpage_a a", "text": "点击图片，有惊喜呀"},
             {"selector": ".home-social a:last-child", "text": "在这里可以了解博主的日常噢~"},
             {"selector": ".post-item a", "type": "read"},
-            {"selector": ".post a img, .post .else h3", "type": "link"}
+            {"selector": ".post a, .post .else h3", "type": "link"},
+            {"selector": ".me .content-right a","type": "link"}
         ],
         "link":["http://errr.me"]
     },
-    "night": "single.night()",
-    "model": ["http://errr.me/ni/live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
+    "night": "sunMoon()",
+    "model": ["http://errr.me/ni/live2d/models/aoba/model.json","http://errr.me/ni/live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
 });

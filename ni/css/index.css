@@ -12,16 +12,13 @@ html, body {
     filter: grayscale(.95);
 } */
 
-#loader {
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 3px;
-    z-index: 100;
-    background-image: -webkit-linear-gradient(left, #F16F5C 0%, #F16F5C 12.5%, #5B56DD 12.5%, #5B56DD 25%, #E15CED 25%, #E15CED 37.5%, #27E559 37.5%, #27E559 50%, #18C8C9 50%, #18C8C9 62.5%, #DC8987 62.5%, #DC8987 75%, #BB83D6 75%, #BB83D6 87.5%, #E774BD 87.5%, #E774BD 100%);
-    background-image: -moz-linear-gradient(left, #F16F5C 0%, #F16F5C 12.5%, #5B56DD 12.5%, #5B56DD 25%, #E15CED 25%, #E15CED 37.5%, #27E559 37.5%, #27E559 50%, #18C8C9 50%, #18C8C9 62.5%, #DC8987 62.5%, #DC8987 75%, #BB83D6 75%, #BB83D6 87.5%, #E774BD 87.5%, #E774BD 100%);
-  }
+.nig {
+    background-color: #ffffff;
+}
+
+.nig.nigh {
+    background-color: #000000;
+}
 
 /* common */
 
@@ -471,7 +468,8 @@ a.writing:link {
     position: relative;
     z-index: 3;
 }
-.post a:hover{
+
+.post a:hover {
     text-decoration: none;
 }
 
@@ -524,6 +522,28 @@ a.writing:link {
     font-size: 14px;
     line-height: 1.8;
 }
+
+/* .moreDiv {
+    margin-top: 24px;
+}
+
+.more {
+    background-color: #F7F7F7;
+    padding: 5px 35px;
+    border-radius: 30px;
+    margin-left: 707px;
+    color: #060606;
+    font-size: 14px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.more:hover {
+    background-color: #00a7e0;
+    color: white;
+} */
 
 /* footer */
 

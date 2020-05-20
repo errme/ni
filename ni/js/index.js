@@ -45,6 +45,71 @@ function banner() {
 })(jQuery);
 
 // console
-console.log("\n %c 欢迎来到 http://errr.me 站长：苍耳  %c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖 \n\n",
-    "color: white; background: rgba(0,0,0,0.2); padding:5px 0;",
+console.log("%c 如果你来访我 我不在 请和我门外的花坐一会儿 它们很温暖",
     "color: gray; background: rgba(0,0,0,0.1); padding:5px 0;");
+console.log("%c Cnager " + "%c http://errr.me http://xgan.me",
+    "color: #fff; background-image: linear-gradient(90deg, rgb(47, 172, 178) 0%, rgb(45, 190, 96) 100%); padding:5px 1px;",
+    "margin: 1em 0; padding: 5px 0; background: #efefef;");
+// console.log("%c Cnager " + "%c https://get233.com/archives/mirages-intro.html",
+//     "color: #fff; background-image: linear-gradient(90deg, rgb(47, 172, 178) 0%, rgb(45, 190, 96) 100%); padding:5px 1px;",
+//     "background-image: linear-gradient(90deg, rgb(45, 190, 96) 0%, rgb(255, 255, 255) 100%); padding:5px 0;");
+
+
+// 夜间模式 未完成
+function sunMoon() {
+    var styleElem = null,
+        doc = document,
+        ie = doc.all,
+        fontColor = 50,
+        sel = 'body,body *';
+    var styleElem = createCSS(sel, setStyle(fontColor), styleElem);
+    // showTip(doc);
+    if (ie) {
+        doc.attachEvent('onkeydown', onKeyDown);
+    } else {
+        doc.addEventListener('keydown', onKeyDown);
+    };
+    function onKeyDown(evt) {
+        if (!(evt.keyCode === 87 || evt.keyCode === 81)) return;
+        var evt = ie ? window.event : evt;
+        if (evt.keyCode === 87) {
+            fontColor = (fontColor >= 100) ? 100 : fontColor + 10
+        } else if (evt.keyCode === 81) {
+            fontColor = (fontColor <= 10) ? 10 : fontColor - 10
+        };
+        styleElem = createCSS(sel, setStyle(fontColor), styleElem);
+    };
+    function setStyle(fontColor) {
+        var colorArr = [fontColor, fontColor, fontColor];
+        // return 'background-color:gray !important;color:RGB(' + colorArr.join('%,') + '%) !important;'
+        return 'opacity: .9 !important'
+    };
+    function createCSS(sel, decl, styleElem) {
+        var doc = document,
+            h = doc.getElementsByTagName('head')[0],
+            styleElem = styleElem;
+        if (!styleElem) {
+            s = doc.createElement('style');
+            s.setAttribute('type', 'text/css');
+            styleElem = ie ? doc.styleSheets[doc.styleSheets.length - 1] : h.appendChild(s);
+        };
+        if (ie) {
+            styleElem.addRule(sel, decl);
+        } else {
+            styleElem.innerHTML = '';
+            styleElem.appendChild(doc.createTextNode(sel + ' {' + decl + '}'));
+        };
+        return styleElem;
+    };
+    // function showTip() {
+    //     var tipElem = doc.createElement('div'),
+    //         body = doc.getElementsByTagName('body')[0];
+    //     tipElem.innerHTML = '===夜间模式开启，q&w可增减字体亮度===';
+    //     tipElem.style.cssText = 'background-color:#3FA9FB !important;color:#fff !important;font-size:14px;height:20px;line-height:20px;position:fixed;left:0;top:0;text-align:center;width:100%;z-index:99999;';
+    //     body.appendChild(tipElem);
+    //     setTimeout(function () {
+    //         body.removeChild(tipElem);
+    //     },
+    //         3000);
+    // }
+}
