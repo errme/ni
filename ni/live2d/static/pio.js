@@ -290,5 +290,5 @@ var pio = new Paul_Pio({
         "link":["http://errr.me"]
     },
     "night": "sunMoon()",
-    "model": ["./live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
+    "model": ["http://errr.me/ni/live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
 });
