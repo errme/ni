@@ -460,6 +460,9 @@ a.writing:link {
     position: relative;
     z-index: 3;
 }
+.post a:hover{
+    text-decoration: none;
+}
 
 .else {
     position: absolute;
@@ -583,13 +586,3 @@ a.writing:link {
     width: 20px;
     margin-left: -30px;
 }
-
-/* .pio-container{
-    margin-right: 70;
-    margin-bottom: 50;
-    z-index: 99;
-}
-.pio{
-    width: 120;
-    height: 70;
-} */
