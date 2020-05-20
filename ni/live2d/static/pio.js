@@ -281,7 +281,7 @@ var pio = new Paul_Pio({
     "content": {
         "welcome": ["欢迎来到一期一会！", "今天天气不错，一起来玩吧！", "多说不易 不解风情，多说不易 不解风情，多说不易 不解风情"],
         "custom": [
-            {"selector": ".comment-form", "text": "欢迎参与本文评论，别发小广告噢~"},
+            {"selector": ".tabpage_a a", "text": "点击图片，有惊喜呀"},
             {"selector": ".home-social a:last-child", "text": "在这里可以了解博主的日常噢~"},
             {"selector": ".post-item a", "type": "read"},
             {"selector": ".post-content a, .page-content a", "type": "link"}
