@@ -284,7 +284,7 @@ var pio = new Paul_Pio({
             {"selector": ".tabpage_a a", "text": "点击图片，有惊喜呀"},
             {"selector": ".home-social a:last-child", "text": "在这里可以了解博主的日常噢~"},
             {"selector": ".post-item a", "type": "read"},
-            {"selector": ".post-content a, .page-content a", "type": "link"}
+            {"selector": ".post a img, .post .else h3", "type": "link"}
         ],
         "link":["http://errr.me"]
     },
