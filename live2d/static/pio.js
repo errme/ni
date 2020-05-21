@@ -17,7 +17,8 @@ var Paul_Pio = function (prop) {
         menu: document.querySelector(".pio-container .pio-action"),
         canvas: document.getElementById("pio"),
         body: document.querySelector(".pio-container"),
-        root: document.location.protocol +'//' + document.location.hostname +'/'
+        // root: document.location.protocol +'//' + document.location.hostname +'/'
+        root: "http://errr.me"
     };
 
     /* - 方法 */
@@ -278,6 +279,9 @@ var pio = new Paul_Pio({
     "mode": "draggable",
     "hidden": false,
     "tips":false,
+    "link":["http://errr.me"],
+    // "touch":["你这个绅士！", "别碰我！"]
+    "referer": "你通过 %t 来到了这里",
     "content": {
         "welcome": ["欢迎来到一期一会呀！", "今天天气不错，一起来玩吧！", "多说不易 不解风情"],
         "custom": [
@@ -294,10 +298,6 @@ var pio = new Paul_Pio({
             {"selector": ".post a, .post .else h3", "type": "link"},
             {"selector": ".topbar .topmenu a,.me .content-right a","type": "link"}
         ],
-        "link":["http://errr.me/404.html"],
-        // "touch":["你这个绅士！", "别碰我！"]
-        "referer": "你通过 %t 来到了这里",
-
     },
     "night": "sunMoon()",
     "model": ["http://errr.me/ni/live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
