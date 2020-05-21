@@ -294,7 +294,10 @@ var pio = new Paul_Pio({
             {"selector": ".post a, .post .else h3", "type": "link"},
             {"selector": ".topbar .topmenu a,.me .content-right a","type": "link"}
         ],
-        "link":["http://errr.me"]
+        "link":["http://errr.me/404.html"],
+        // "touch":["你这个绅士！", "别碰我！"]
+        "referer": "你通过 %t 来到了这里",
+
     },
     "night": "sunMoon()",
     "model": ["http://errr.me/ni/live2d/models/snow_miku/model.json","http://errr.me/ni/live2d/models/madoka/model.json","http://errr.me/ni/live2d/models/pio/model.json"]
