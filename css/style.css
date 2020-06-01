@@ -51,13 +51,15 @@ Main components
     display: inline-block;
     height: 30px;
     width: 30px;
+    border-radius: 50%;
     position: fixed;
     bottom: 40px;
     right: 10px;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-    background: #03A9F4 url(../images/cd-top-arrow.svg) no-repeat center 50%;
+    /* background: #03A9F4 url(../images/cd-top-arrow.svg) no-repeat center 49%; */
+    background: pink url(../images/cd-top.svg) no-repeat center 50%;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;

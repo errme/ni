@@ -157,7 +157,7 @@ var Paul_Pio = function (prop) {
 
             // 关于我
             elements.info.onclick = function () {
-                window.open(prop.content.link || "https://paugram.com/coding/add-poster-girl-with-plugin.html");
+                window.open(prop.content.link || "http://errr.me");
             };
             elements.info.onmouseover = function () {
                 modules.render("想了解更多关于我的信息吗？");
@@ -281,24 +281,33 @@ var pio = new Paul_Pio({
     "tips":false,
     "link":["http://errr.me"],
     // "touch":["你这个绅士！", "别碰我！"]
-    "referer": "你通过 %t 来到了这里",
+    // "referer": "你通过 %t 来到了这里",
     "content": {
-        "welcome": ["欢迎来到一期一会呀！", "今天天气不错，一起来玩吧！", "多说不易 不解风情"],
+        "welcome": ["呐，你知道吗？听说樱花飘落的速度是秒速五厘米哦。", "低头呢喃 对你的偏爱太过明目张胆", "除非看见你 我才有好心情"],
         "custom": [
-            {"selector": ".topbar .headMenu a", "text": "欢迎来到一期一会呀！"},
+            {"selector": ".topbar .headMenu a", "text": "我与你相爱时 清白又勇敢"},
             {"selector": ".banner .carousel-inner", "text": "世间情动，不过盛夏白瓷梅子汤，碎冰撞壁叮当响。"},
+            {"selector": ".music_mp3", "text": "点击播放 / 暂停音乐呀"},
             {"selector": ".tashuo .tashuo_content", "text": "春风十里，还是不如你呀"},
             {"selector": ".tashuo .tashuo_title", "text": "你笑起来真像好天气呀"},
-            {"selector": ".you_title", "text": "你笑起来真像好天气呀"},
-            {"selector": ".me .title-small", "text": "真是不解风情呀"},
+            {"selector": ".you_title", "text": "我一扑向你，就感到无限温柔呀。"},
+            {"selector": ".me .title-small", "text": "爱和自由 你和温柔"},
+            {"selector": ".me #vedio_one", "text": "世界啊 这就是你说的青春吗？"},
+            {"selector": ".me #vedio_two", "text": "清风月明"},
+            {"selector": ".me .detail_one", "text": "我只不过未来储存足够的爱 足够的温柔和狡猾"},
+            {"selector": ".me .detail_two", "text": "以防  万一 醒来就遇见你"},
             {"selector": ".ni .tab-pane", "text": "把每次偶遇的蓝色都送给你"},
-            {"selector": ".tabpage_a img", "text": "点图片,换文字呀"},
+            {"selector": ".ni .tabpage_one", "text": "你凤冠霞帔许我此不渝"},
+            {"selector": ".ni .tabpage_two", "text": "我清风白露守你百岁无忧"},
+            {"selector": "#footer a:nth-child(1)", "text": "Theme by : Canger"},
+            {"selector": "#footer a:nth-child(2)", "text": "我还是一个小萌新呀"},
+            {"selector": "#footer ul li:nth-child(1)", "text": "要看看我的Github吗？"},
             {"selector": ".cd-top", "text": "返回顶部呀"},
             {"selector": ".post-item a", "type": "read"},
             {"selector": ".post a, .post .else h3", "type": "link"},
             {"selector": ".topbar .topmenu a,.me .content-right a","type": "link"}
         ],
     },
-    "night": "sunMoon()",
-    "model": ["http://errr.me/live2d/models/snow_miku/model.json","http://errr.me/live2d/models/madoka/model.json","http://errr.me/live2d/models/pio/model.json"]
+    "night": "night()",
+    "model": ["https://errr.me/live2d/models/snow_miku/model.json","https://errr.me/live2d/models/pio/model.json"]
 });

@@ -12,14 +12,6 @@ html, body {
     filter: grayscale(.95);
 } */
 
-.nig {
-    background-color: #ffffff;
-}
-
-.nig.nigh {
-    background-color: #000000;
-}
-
 /* common */
 
 .you_title {
@@ -59,14 +51,10 @@ div.topbarFixed .headMenu {
     padding-top: 30px;
 }
 
-div.topbarFixed .user_login_div {
-    top: 0px;
-}
-
 .topbar {
     width: 100%;
     height: 164px;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .topbar .headMenu {
@@ -89,7 +77,6 @@ div.topbarFixed .user_login_div {
     font-size: 18px;
     margin-left: 26px;
     padding-bottom: 5px;
-    border-bottom: 1px solid white;
 }
 
 .topmenu a:hover {
@@ -101,11 +88,6 @@ div.topbarFixed .user_login_div {
 
 .topmenu a:link {
     text-decoration: none;
-}
-
-a.logo:hover {
-    opacity: 0.3;
-    transition: all 0.2s ease-in;
 }
 
 .topmenu li {
@@ -140,30 +122,21 @@ a.logo:hover {
 
 /*  */
 
-.bannner_dot {
-    margin-top: 50px;
+.music_mp3 {
+    margin-top: 70px;
     text-align: center;
 }
 
-.bannner_dot .dot_item {
-    width: 40px;
-    height: 3px;
-    background-color: aliceblue;
-    border-radius: 8px;
-    display: inline-block;
-    margin: 0px 4px;
-    cursor: pointer;
-}
-
-.bannner_dot .dot_cur {
-    background-color: #c1c1c1;
+.music_mp3 img {
+    width: 60px;
+    height: 60px;
 }
 
 /* tashuo */
 
 .tashuo {
     width: 450px;
-    margin: 160px auto;
+    margin: 120px auto 160px;
 }
 
 .tashuo_title {
@@ -179,7 +152,7 @@ a.logo:hover {
 .tashou_bottom {
     text-align: center;
     border-bottom: 1px solid #dedddd;
-    width: 115px;
+    width: 150px;
     margin: 0px auto;
 }
 
@@ -228,13 +201,47 @@ i.fa-quote-right {
     bottom: -25px;
     height: 3px;
     background: #DEDEDE;
-    width: 93px;
+    width: 162px;
     left: 0;
 }
 
-.content-detail {
-    font-weight: 400;
+#video, #video1 {
+    width: 660px;
+    height: 400px;
+    margin: -30px auto 0;
+    position: relative;
+}
+
+#video video, #video1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.VideoBtn, .VideoBtn1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    margin-top: -35px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.videotime {
+    display: none;
+}
+.detail{
     margin-top: 70px;
+    margin-bottom: 50px;
+}
+.content-detail {
+    color: #000000;
+    font-weight: 400;
+    /* margin-top: 50px; */
     line-height: 30px;
     font-size: 14px;
     letter-spacing: 0.4px;
@@ -244,108 +251,14 @@ i.fa-quote-right {
     margin-top: 20px;
 }
 
-ul.portfolio-image {
-    list-style: none;
-    position: relative;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-ul.portfolio-image li {
-    display: block;
-    list-style: none;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    padding-top: 46%;
-}
-
-ul.portfolio-image li:hover {
-    cursor: pointer;
-}
-
-ul.portfolio-image li:hover img {
-    -webkit-filter: grayscale(20%);
-    filter: grayscale(20%);
-    transform: scale(1.15);
-}
-
-ul.portfolio-image li:hover .image-bg {
-    opacity: 1;
-}
-
-ul.portfolio-image li:hover .description-wrap {
-    background: rgba(186, 186, 186, 0.6);
-}
-
-ul.portfolio-image li img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: filter, transform, 0.5s;
-}
-
-ul.portfolio-image li .decription-wrap {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(242, 242, 242, 0.4);
-    padding: 20px;
-    transition: background, 0.5s;
-}
-
-ul.portfolio-image li .image-bg {
-    color: #2f2f2f;
-    background: #ffffff;
-    background: rgba(255, 255, 255, 0.9);
-    font-size: 14px;
-    text-transform: uppercase;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    -ms-transform: translate(-50%, -50%);
-    /* IE 9 */
-    -webkit-transform: translate(-50%, -50%);
-    /* Chrome, Safari, Opera */
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding: 10px 0;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    opacity: 0;
-    transition: opacity, 0.5s;
-    letter-spacing: 1.5px;
-    font-weight: 300;
-    color: transparent;
-}
-
-ul.portfolio-image li .desc {
-    position: absolute;
-    z-index: 1;
-    top: 45%;
-    left: 0;
-    display: table-cell;
-    right: 0;
-    text-align: center;
-    color: #2f2f2f;
-    font-size: 14px;
-    font-weight: 700;
+.me a, .me a:hover, .me a:link, .me a:active {
+    text-decoration: none;
 }
 
 /* 第二人称 */
 
 .ni {
     padding: 20px 0;
-    background-color: #ffffff;
 }
 
 .nav-tabs-news {
@@ -374,7 +287,7 @@ ul.portfolio-image li .desc {
     text-decoration: none;
     border: 1.5px solid #f3f3f3;
     padding: 20px;
-    background-color: White;
+    /* background-color: #ffffff; */
     color: gray;
     overflow: hidden;
 }
@@ -414,7 +327,7 @@ ul.portfolio-image li .desc {
     color: #5d5b5b;
 }
 
-a.writing:link {
+a.writing:hover,a.writing:link {
     text-decoration: none;
 }
 
@@ -476,7 +389,7 @@ a.writing:link {
 
 .else {
     position: absolute;
-    background: #fff;
+    /* background: #fff; */
     text-align: left;
     top: 20px;
     height: 398px;
@@ -559,7 +472,7 @@ a.writing:link {
     font-weight: 500;
     font-family: Consolas;
     padding: 1.25rem 0;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
 #footer p {

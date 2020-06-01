@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../font/fontawesome-webfont.eot-v=4.4.0');
-  src: url('../font/fontawesome-webfont.eot-#iefix&v=4.4.0') format('embedded-opentype'), url('../font/fontawesome-webfont.ttf-v=4.4.0') format('truetype'), url('../font/fontawesome-webfont.svg-v=4.4.0#fontawesomeregular') format('svg');
+  /* src: url('../font/fontawesome-webfont.eot'); */
+  /* src: url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg-v=4.4.0#fontawesomeregular') format('svg'); */
+  src: url('https://cdn.jsdelivr.net/gh/nianme/ni/font/fontawesome-webfont.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,9 +22,4 @@
 
 .fa-quote-right:before {
   content: "\f10e";
-}
-
-@font-face {
-  font-family: itheima;
-  src: url(../font/MiFie-Web-Font.eot), url(../font/MiFie-Web-Font.svg), url(../font/MiFie-Web-Font.ttf), url(../font/MiFie-Web-Font.woff);
 }
