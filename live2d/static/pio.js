@@ -296,7 +296,7 @@ var pio = new Paul_Pio({
             {"selector": ".me #vedio_two", "text": "清风月明"},
             {"selector": ".me .detail_one", "text": "我只不过未来储存足够的爱 足够的温柔和狡猾"},
             {"selector": ".me .detail_two", "text": "以防  万一 醒来就遇见你"},
-            {"selector": ".ni .tab-pane", "text": "把每次偶遇的蓝色都送给你"},
+            {"selector": ".ni .tab-pane", "text": "告白是一件有意义的事吗？"},
             {"selector": ".ni .tabpage_one", "text": "你凤冠霞帔许我此不渝"},
             {"selector": ".ni .tabpage_two", "text": "我清风白露守你百岁无忧"},
             {"selector": "#footer a:nth-child(1)", "text": "Theme by : Canger"},
