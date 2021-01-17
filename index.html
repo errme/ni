@@ -8,7 +8,8 @@
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
     <meta name="author" content="苍耳">
     <meta name="keywords" content="一期一会,草长莺飞,星河滚烫">
     <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
@@ -92,8 +93,8 @@
             <a class="site_one_logo_scroll" href="index.html">
             </a>
             <ul class="topmenu">
+                <li><a href="index.html">落款情深</a></li>
                 <li><a href="index.html">草长莺飞</a></li>
-                <li><a href="index.html">清风月明</a></li>
                 <li><a href="index.html">人间情书</a></li>
                 <li><a href="index.html">星河滚烫</a></li>
             </ul>
@@ -181,7 +182,8 @@
                     <div class="tab-content">
                         <div class="active tab-pane" id="vedio_one">
                             <div id="video">
-                                <video src="https://cdn.jsdelivr.net/gh/nianme/ni/video/1585317036550.mp4" id="videoShow"></video>
+                                <video src="https://cdn.jsdelivr.net/gh/nianme/ni/video/1585317036550.mp4"
+                                    id="videoShow"></video>
                                 <span class="VideoBtn">
                                     <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/bo1.png"></span>
                                 <div class="videotime"></div>
@@ -189,7 +191,8 @@
                         </div>
                         <div class="tab-pane" id="vedio_two">
                             <div id="video1">
-                                <video src="https://cdn.jsdelivr.net/gh/nianme/ni/video/1585131010146.mp4" id="videoShow1"></video>
+                                <video src="https://cdn.jsdelivr.net/gh/nianme/ni/video/1585131010146.mp4"
+                                    id="videoShow1"></video>
                                 <span class="VideoBtn1">
                                     <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/bo1.png">
                                 </span>
@@ -251,7 +254,8 @@
                             <ul>
                                 <li class="topw_item">
                                     <a class="writing" href="" target="_blank">
-                                        <img class="topw_photo" src="https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_sm_1.png" />
+                                        <img class="topw_photo"
+                                            src="https://cdn.jsdelivr.net/gh/nianme/ni/images/banner_sm_1.png" />
                                         <div class="wtop_name">可爱</div>
                                         <div class="topw_title">印象中的夏天呀&nbsp;&nbsp;
                                             <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/9.gif" alt="">
@@ -393,7 +397,8 @@
 
     <!-- 离开网页时title -->
     <script>
-        var OriginTitile = document.title, titleTime;
+        var OriginTitile = document.title,
+            titleTime;
         document.addEventListener("visibilitychange", function () {
             if (document.hidden) {
                 $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
@@ -424,27 +429,33 @@
     <!-- music -->
     <script>
         window.onload = function () {
-            var musicList = ["https://cdn.jsdelivr.net/gh/nianme/ni/music/music.mp3","https://cdn.jsdelivr.net/gh/nianme/ni/music/1585720344287.mp3", "https://cdn.jsdelivr.net/gh/nianme/ni/music/1585131004138.mp3", "https://cdn.jsdelivr.net/gh/nianme/ni/music/qf.mp3"];
+            var musicList = ["https://cdn.jsdelivr.net/gh/nianme/ni/music/music.mp3",
+                "https://cdn.jsdelivr.net/gh/nianme/ni/music/1585720344287.mp3",
+                "https://cdn.jsdelivr.net/gh/nianme/ni/music/1585131004138.mp3",
+                "https://cdn.jsdelivr.net/gh/nianme/ni/music/qf.mp3"
+            ];
             playMusic(musicList);
         }
         var audio = document.getElementById('music');
+
         function playMusic(musicList) {
             var src = musicList.pop(); // 删除并返回数组的最后一个元素
             audio.src = src;
             musicList.unshift(src); // 向数组的开头添加一个或更多元素 并返回新的长度
             audio.addEventListener("ended", playEndedHandler, false);
+
             function playEndedHandler() {
                 src = musicList.pop();
                 audio.src = src;
                 musicList.unshift(src);
             }
         }
+
         function music_s() {
             if (audio.paused) {
                 audio.play(); // 播放
                 document.getElementById('music_png').src = 'https://cdn.jsdelivr.net/gh/nianme/ni/images/music4.png';
-            }
-            else {
+            } else {
                 audio.pause(); // 暂停
                 document.getElementById('music_png').src = 'https://cdn.jsdelivr.net/gh/nianme/ni/images/music2.png';
             }
