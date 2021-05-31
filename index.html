@@ -1,61 +1,43 @@
-<!--
-代码如诗 , 如痴如醉 !
--->
-
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="loading">
 
 <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
-    <meta name="author" content="苍耳">
-    <meta name="keywords" content="一期一会,草长莺飞,星河滚烫">
-    <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
+    <meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>一期一会</title>
 
-    <link rel="icon" href="./images/icon.jpg">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./live2d/static/pio.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nianme/ni/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
 
-    <script src="./lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
-    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="./lib/underscore/underscore-min.js"></script>
-    <script src="./js/jsmodern.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/typed.js"></script>
+    <meta name="keywords" content="一期一会,青青子衿">
+    <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
 
-    <script type="text/template" id="template_point">
-        <%$.each(model,function(i,item){%>
-            <li class="<%=i==0?'active':''%>" data-target="#slidershow" datta-slide-to="<%=i%> "></li>
-        <%});%>
-    </script>
-    <script type="text/template" id="template_image">
-        <%$.each(model,function(i,item){%>
-            <div class="item <%=i==0?'active':''%> ">
-            <%if(isMobile){%>
-                <a href="" class="m_imageBox">
-                    <img src="<%=item.mb%> " alt="">
-                </a>
-            <%}
-            else{%>
-                <a href="" class="pc_imageBox">
-                    <img src="<%=item.pc%>" alt="">
-                </a>
-                <%}
-            %> 
-            </div>
-        <%});%>
+    <meta name="author" content="一期一会">
+
+    <link rel="alternative" href="atom.xml" title="一期一会" type="application/atom+xml">
+
+    <link rel="icon" href="/img/ni.ico">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="js/log.js"></script>
+
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8691406134231910",
+            enable_page_level_ads: true
+        });
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script>
+    <script>
         !function (e, a, t, n, g, c, o) {
             e.GoogleAnalyticsObject = g, e.ga = e.ga || function () {
                 (e.ga.q = e.ga.q || []).push(arguments)
@@ -64,404 +46,278 @@
                 c = a.createElement(t),
                 o = a.getElementsByTagName(t)[0],
                 c.async = 1,
-                c.src = "https://cdn.jsdelivr.net/gh/nianme/ni/js/analytics.js",
+                c.src = "https://www.google-analytics.com/analytics.js",
                 o.parentNode.insertBefore(c, o)
         }(window, document, "script", 0, "ga"),
             ga("create", "UA-142766624-2", "auto"),
             ga("send", "pageview");
-    </script> -->
+    </script>
 
-    <!-- 百度统计 -->
-    <!-- <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?ad5c7879622ab0f8e4c3bb22ff10f189";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script> -->
+    <!-- <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script> -->
+
+    <!-- mejia -->
+    <!-- <script crossorigin="anonymous" integrity="sha384-38qS6ZDmuc4fn68ICZ1CTMDv4+Yrqtpijvp5fwMNdbumNGNJ7JVJHgWr2X+nJfqM"
+        src="https://lib.baomitu.com/require.js/2.3.6/require.min.js"></script> -->
 
 </head>
 
-<body class="night">
-    <!-- 导航栏 -->
-    <div class="topbar">
-        <div class="headMenu">
-            <a class="site_one_logo" href="index.html">
-            </a>
-            <a class="site_one_logo_scroll" href="index.html">
-            </a>
-            <ul class="topmenu">
-                <li><a href="index.html">落款情深</a></li>
-                <li><a href="index.html">草长莺飞</a></li>
-                <li><a href="index.html">人间情书</a></li>
-                <li><a href="index.html">星河滚烫</a></li>
-            </ul>
-        </div>
-    </div>
+</html>
 
+<body class="loading">
+    <span id="config-title" style="display:none">一期一会</span>
+    <div id="loader"></div>
+    <div class="nav">
+        <ul id="menu-menu" class="menu">
 
-    <!-- 轮播图 -->
-    <div class="banner">
+            <!-- <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="./nian" title="一期一会" target="_self" rel="noopener">一期一会<span
+                        id="old">(旧)</span></a>
+            </li> -->
 
-        <div id="slidershow" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+            <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="./ni" title="遇你" target="_self" rel="noopener">遇你</span></a>
+            </li>
 
-            </ol>
-            <div class="carousel-inner">
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="./nian" class="posttitle" title="子衿" target="_self" rel="noopener">子衿</a>
+            </li>
 
-            </div>
-            <a href="#slidershow" class="left carousel-control" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a href="#slidershow" class="right carousel-control" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-        </div>
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="./letter" title="纸篓" target="_self" rel="noopener">纸篓</a>
+            </li>
 
-    </div>
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="./you/ni" title="你我" target="_self" rel="noopener">你我</a>
+            </li>
 
-    <!-- muscic -->
-    <div class="music_mp3">
+            <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="./you" title="Q&A" target="_self" rel="noopener">Q&A</a>
+            </li>
 
-        <audio id="music" controls="true" autoplay="true" hidden></audio>
-        <div onclick="music_s();">
-            <img src="./images/music3.png" id="music_png" alt="">
-        </div>
+        </ul>
+
+        <p id="copyright">
+            <!-- &copy; 2019 一期一会By : Canger -->
+            <!-- Copyright ©🦄 2019 难得一面  世当珍惜 -->
+            🦄
+        </p>
 
     </div>
+    <div id="container">
 
-    <!-- tashou -->
-    <!-- 打字机 -->
-    <div class="tashuo">
-        <div class="tashuo_content">
-            <i class="quote-before fa fa-quote-left"></i>
-            说起女孩子啊，不由得先想到好看的裙摆和清澈的笑。<br>
-            在最好的年纪笑着跳着，似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。若非要找个词来形容，大概是，“春风”？<br>
-            可是，春风十里，还是不如你啊。
-            <i class="quote-after fa fa-quote-right"></i>
-        </div>
-        <div class="tashuo_title typed"></div>
-        <div class="tashou_bottom"></div>
-    </div>
-
-    <!-- 第一人称 -->
-    <!-- 栅格系统 -->
-    <div class="me">
-        <div class="you_title">
-            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第一人称</span><br>
-            <img src="./images/1.gif">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="title-small">
-                        <span>收集温柔的碎片</span>
-                    </h3>
-                    <div class="active detail">
-                        <a href="#vedio_one" data-toggle="tab">
-                            <p class="content-detail detail_one">
-                                关于温柔啊。<br>
-                                最喜欢的是润物细无声温温柔柔的人。没有任何尖锐的刺，时刻保持一种和谐让人愿意接近的气质。<br>
-                                那些仓皇岁月里难得温柔的瞬间，藏在了细微之处。
-                            </p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#vedio_two" data-toggle="tab">
-                            <p class="content-detail detail_two hidden-sm">
-                                那大概是落日渐渐褪去晚霞初上之时吧，晚风伴着耳机里的音乐享受的时刻。<br>
-                                午睡前窗外风吹动树叶的沙沙声，夏天特有的温柔。<br>
-                                清晨的吻和温热的粥，与一个人相谈甚欢。
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-8 content-right">
-                    <div class="tab-content">
-                        <div class="active tab-pane" id="vedio_one">
-                            <div id="video">
-                                <video src="https://cdn.jsdelivr.net/gh/nianme/ni/video/1585317036550.mp4"
-                                    id="videoShow"></video>
-                                <span class="VideoBtn">
-                                    <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/bo1.png"></span>
-                                <div class="videotime"></div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="vedio_two">
-                            <div id="video1">
-                                <video src="https://cdn.jsdelivr.net/gh/nianme/ni/video/1585131010146.mp4"
-                                    id="videoShow1"></video>
-                                <span class="VideoBtn1">
-                                    <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/bo1.png">
-                                </span>
-                                <div class="videotime"></div>
-                            </div>
-                        </div>
-                    </div>
+        <div id="screen">
+            <div id="mark">
+                <div class="layer" data-depth="0.4">
+                    <img src="/images/321.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- 第二人称 -->
-    <!-- 标签页 -->
-    <div class="ni">
-        <div class="you_title">
-            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第二人称</span><br>
-            <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/777.gif">
-        </div>
-        <div class="container">
-            <dir class="row">
-                <div class="col-md-3 col-md-offset-1">
-                    <div class="nav nav-tabs-news">
-                        <div class="active tabpage_a tabpage_one">
-                            <a href="#tabpage_one" data-toggle="tab">
-                                <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/ni_1.gif" alt="">
-                            </a>
-                        </div>
-                        <div class="tabpage_a tabpage_two">
-                            <a href="#tabpage_two" data-toggle="tab">
-                                <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/ni_2.gif" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="tab-content">
-                        <div class="active tab-pane" id="tabpage_one">
-                            <ul>
-                                <li class="topw_item">
-                                    <a class="writing" href="" target="_blank">
-                                        <img class="topw_photo" src="./images/icon.jpg" />
-                                        <div class="wtop_name">苍耳</div>
-                                        <div class="topw_title">告白是一件有意义的事吗？&nbsp;&nbsp;
-                                            <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/9.gif" alt=""></div>
-                                        <div class="topw_content">
-                                            <p>我告诉你我喜欢你</p>
-                                            <p>并不是一定和你在一起</p>
-                                            <p>只是希望今后的你</p>
-                                            <p>在遭遇人生低谷的时候 不要伤心</p>
-                                            <p>至少曾经有人被你的魅力所吸引</p>
-                                            <p>曾经是 以后也会是</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-pane" id="tabpage_two">
-                            <ul>
-                                <li class="topw_item">
-                                    <a class="writing" href="" target="_blank">
-                                        <img class="topw_photo"
-                                            src="./images/icon.jpg" />
-                                        <div class="wtop_name">苍耳</div>
-                                        <div class="topw_title">把每次偶遇的蓝色都送给你&nbsp;&nbsp;
-                                            <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/9.gif" alt="">
-                                        </div>
-                                        <div class="topw_content">
-                                            <p>印象中的夏天，在每一个醒来的清晨，抱怨睡眠太少，日子太长。</p>
-                                            <p>印象中的夏天，常常恳请别人帮忙带早餐。</p>
-                                            <p>印象中的夏天，背着书包在铃声响起之前冲进教室，凌乱了自己。</p>
-                                            <p>印象中的夏天，上课忽然走神，想到好玩的事偷笑，或者幻想成功后的自己….然后忽然醒来，问同桌老师讲到哪里了。</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- 第三人称 -->
-    <!-- 响应式 -->
-    <div class="ta">
-        <div class="you_title">
-            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第三人称</span><br>
-            <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/1.gif">
-        </div>
-        <div class="ta_article">
-            <div class="primary">
-                <div class="post">
-                    <a href="/2019/08/28/xia/">
-                        <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/ta.png" class="cover">
-                    </a>
-                    <div class="else">
-                        <p>九月 10, 2017</p>
-                        <h3><a href="https://xgan.me/2017/09/10/huan/" class="posttitle">乍见之欢的心动和久处不厌的心定，你比较喜欢哪一种呢？</a></h3>
-                        <p>在十几岁的时候，我们以为小鹿乱撞才是爱情，以为山盟海誓才是爱情最好的模样，轰轰烈烈才能证明你有多爱我，但爱情真正的模样，是在这些惊心动魄之后的细水长流里，...</p>
-                    </div>
-                </div>
-                <div class="post">
-                    <a href="/2018/09/01/bkn/">
-                        <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/ta.png" class="cover">
-                    </a>
-                    <div class="else">
-                        <p>九月 01, 2018</p>
-                        <h3><a href="https://xgan.me/2018/09/01/bkn/" class="posttitle">不可能的人</a></h3>
-                        <p>每个人心里住了一个不可能的人，这不可能的人给了我们狂喜和遗憾，这些狂喜和遗憾又酿成了回忆。关于那一个心里不可能的人，有人说，就请那些被我们狠狠爱过的人，在...</p>
-                    </div>
-                </div>
-
-
-                <div class="post hidden-sm">
-                    <a href="/2018/05/20/xg/">
-                        <img src="https://cdn.jsdelivr.net/gh/nianme/ni/images/ta.png" class="cover">
-                    </a>
-                    <div class="else">
-                        <p>九月 08, 2014</p>
-                        <h3><a href="/2018/05/20/xg/" class="posttitle">城里月光</a></h3>
-                        <p>过往，终究是人有意，时光无情，又或者是时光有义，人无情。 这世间注定有一些人，总要穿越千山万水的辗转流离，才能获得短暂的缠绵与绮丽，相遇时，携带花香，雨景...</p>
-                    </div>
+            <div id="vibrant">
+                <svg viewBox="0 0 2880 1620" height="100%" preserveAspectRatio="xMaxYMax slice">
+                    <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 " />
+                </svg>
+                <div></div>
+            </div>
+            <div id="header">
+                <div>
+                    <a class="image-logo" href="/"></a>
+                    <div class="icon-menu switchmenu"></div>
                 </div>
             </div>
+
+            <div id="post0">
+                <p>一月 17, 2021</p>
+                <h2><a href="/2021/01/17/ni/" title="星辰" class=" posttitle">所念皆星河</a></h2>
+                <!-- <p class="summary">Nice to Meet You -->
+                <p class="summary">我收集人间碎片，就是为了讲给你听。</p>
+            </div>
+
         </div>
-    </div>
-    <!-- <div class="moreDiv"><a class="more" href="#">NEXT</a></div> -->
+        <div id="primary">
 
-    <!-- live2d -->
-    <div class="pio-container left">
-        <div class="pio-action"></div>
-        <canvas id="pio" width="250" height="250"></canvas>
-    </div>
+            <div class="post">
+                <a href="/2019/08/28/xia/" title="印象中的夏天">
+                    <img src="/images/xia.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>八月 28, 2019</p>
+                    <h3><a href="/2019/08/28/xia/" title="印象中的夏天" class="posttitle">印象中的夏天</a></h3>
+                    <p>印象中的夏天是这样开始的，“考试结束，请考生立即停笔…….”，忘记了那天的天空是否很蓝，忘记了云朵是否像往日那般洁白，只记得那时心中弥漫的是一种不知名的情...</p>
+                </div>
+            </div>
 
-    <!-- footer -->
-    <footer id="footer">
 
-        <div class="footer_con">
+            <div class="post">
+                <a href="/2018/09/01/bkn/" title="不可能的人">
+                    <img src="/images/bkn.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>九月 01, 2018</p>
+                    <h3><a href="/2018/09/01/bkn/" title="不可能的人" class="posttitle">不可能的人</a></h3>
+                    <p>每个人心里住了一个不可能的人，这不可能的人给了我们狂喜和遗憾，这些狂喜和遗憾又酿成了回忆。关于那一个心里不可能的人，有人说，就请那些被我们狠狠爱过的人，在...</p>
+                </div>
+            </div>
 
-            <p>Copyright&nbsp;&copy;&nbsp;2020&nbsp;•&nbsp;Theme&nbsp;by&nbsp;:
-                <a class="posttitle" href="http://errr.me" target="_self">Canger</a>&nbsp;•&nbsp;Run&nbsp;Time&nbsp;:
-                <a class="posttitle" href="" target="_self"><span id="span_dt_dt"></span></a>
-            </p>
-            <ul>
-                <li><a href="https://github.com/nianme" target="_blank"><img src="./images/github.png" alt=""></a></li>
-                <!-- <li><a href="#"><img src="./images/bilibili-line.png" alt=""></a></li>
-                <li><a href="#"><img src="./images/twitter.png" alt=""></a></li> -->
-            </ul>
+
+            <div class="post">
+                <a href="/2018/05/20/xg/" title="习惯">
+                    <img src="/images/xg.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>五月 20, 2018</p>
+                    <h3><a href="/2018/05/20/xg/" title="习惯" class="posttitle">习惯</a></h3>
+                    <p>两个人相爱多久，才可以确定这两个人可以长长久久的走下去。我想是习惯吧。 可是习惯这件事，到底是好是坏呢？ 如果对方告诉你，我习惯爱你，你会不会觉得心里还欠...
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2017/09/10/huan/" title="乍见之欢的心动和久处不厌的心定，你比较喜欢哪一种呢？">
+                    <img src="/images/huan.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>九月 10, 2017</p>
+                    <h3><a href="/2017/09/10/huan/" title="乍见之欢的心动和久处不厌的心定，你比较喜欢哪一种呢？"
+                            class="posttitle">乍见之欢的心动和久处不厌的心定，你比较喜欢哪一种呢？</a></h3>
+                    <p>在十几岁的时候，我们以为小鹿乱撞才是爱情，以为山盟海誓才是爱情最好的模样，轰轰烈烈才能证明你有多爱我，但爱情真正的模样，是在这些惊心动魄之后的细水长流里，...</p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2015/07/16/laizi/" title="来自历史深处的你">
+                    <img src="/images/hanfu.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>七月 16, 2015</p>
+                    <h3><a href="/2015/07/16/laizi/" title="来自历史深处的你" class="posttitle">来自历史深处的你</a></h3>
+                    <p>我从扬州城中缓步走来，清风拂过，衣袂飘飘，与秦淮河畔翩然起舞，衣袖掩面，我不禁迷茫了，我是谁 ？我来自何方？ —题记 认识你，并非偶然，我曾经寻觅了许久，...
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2014/09/08/moon/" title="城里月光">
+                    <img src="/images/moon.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>九月 08, 2014</p>
+                    <h3><a href="/2014/09/08/moon/" title="城里月光" class="posttitle">城里月光</a></h3>
+                    <p>过往，终究是人有意，时光无情，又或者是时光有义，人无情。 这世间注定有一些人，总要穿越千山万水的辗转流离，才能获得短暂的缠绵与绮丽，相遇时，携带花香，雨景...
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="post">
+                <a href="/2013/04/27/gd/" title="没有人是一座孤独的岛屿">
+                    <img src="/images/gd.jpg" class="cover" width="680" height="440">
+                </a>
+                <div class="else">
+                    <p>四月 27, 2013</p>
+                    <h3><a href="/2013/04/27/gd/" title="没有人是一座孤独的岛屿" class="posttitle">没有人是一座孤独的岛屿</a></h3>
+                    <p>我知道孤独有很多种，有些来自空虚，有些发自肺腑。大部分人都因无事可做或分秒必争感到孤独，那些发自肺腑的孤独患者就像战争后的现场，早已血流成河、满目疮痍。 ...
+                    </p>
+                </div>
+            </div>
+
+
         </div>
 
-    </footer>
+        <!-- <footer id="footer">
 
-    <!-- 向上滑显示banner -->
-    <script>
-        $(function () {
-            //menu
-            var scrollTopVal_head_ = 0;
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 0) {
-                    if (!$(".topbar").hasClass("topbarFixed")) {
-                        $(".topbar").addClass("topbarFixed").hide();
-                    }
-                } else {
-                    $(".topbar").removeClass("topbarFixed");
-                }
+            <div class="container">
 
-                if ($(window).scrollTop() <= scrollTopVal_head_) {
-                    //向上滑
-                    $(".topbarFixed").show();
-                } else {
-                    $(".topbarFixed").hide();
-                }
-                scrollTopVal_head_ = $(window).scrollTop();
-            });
-        });
-    </script>
+                <p>
+                    Copyright &copy; 2019 • Theme by : <a class="posttitle" href="http://xgan.me"
+                        target="_self">Canger</a><br>
+                    Run time : <a class="posttitle" href="https://xgan.me/log/index.html" target="_self"><span
+                            id="span_dt_dt"></span></a>
+                </p>
 
-    <!-- run time -->
-    <script>
-        function show_date_time() {
-            window.setTimeout("show_date_time()", 1000);
-            var h = new Date("5/16/2020 19:00:00"),
-                j = new Date,
-                d = j.getTime() - h.getTime(),
-                i = 86400000,
-                b = d / i,
-                g = Math.floor(b),
-                c = 24 * (b - g),
-                a = Math.floor(c),
-                f = 60 * (c - a),
-                l = Math.floor(60 * (c - a)),
-                k = Math.floor(60 * (f - l));
+            </div>
 
-            span_dt_dt.innerHTML = g + "&nbsp;d&nbsp;" + a + "&nbsp;hr&nbsp;" + l + "&nbsp;m&nbsp;" + k + "&nbsp;sec"
+        </footer> -->
 
-        }
-        show_date_time();
-    </script>
-
-    <!-- 离开网页时title -->
-    <script>
-        var OriginTitile = document.title,
-            titleTime;
-        document.addEventListener("visibilitychange", function () {
-            if (document.hidden) {
-                $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
-                document.title = "(●—●)喔哟，崩溃啦！";
-                clearTimeout(titleTime)
-            } else {
-                $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
-                document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
-                titleTime = setTimeout(function () {
-                    document.title = OriginTitile
-                }, 2000)
-            }
-        });
-    </script>
-
-    <!-- 返回顶部插件 -->
-    <a href="#0" class="cd-top">Top</a>
-
-    <script src="./js/jquery.cdtop.min.js"></script>
-
-    <script src="./js/main.js"></script>
-
-    <!-- Live2d -->
-    <script src="https://cdn.jsdelivr.net/gh/nianme/ni/live2d/static/l2d.js"></script>
-
-    <script src="./live2d/static/pio.js"></script>
-
-    <!-- music -->
-    <script>
-        window.onload = function () {
-            var musicList = ["https://cdn.jsdelivr.net/gh/nianme/ni/music/music.mp3",
-                "https://cdn.jsdelivr.net/gh/nianme/ni/music/1585720344287.mp3",
-                "https://cdn.jsdelivr.net/gh/nianme/ni/music/1585131004138.mp3",
-                "https://cdn.jsdelivr.net/gh/nianme/ni/music/qf.mp3"
-            ];
-            playMusic(musicList);
-        }
-        var audio = document.getElementById('music');
-
-        function playMusic(musicList) {
-            var src = musicList.pop(); // 删除并返回数组的最后一个元素
-            audio.src = src;
-            musicList.unshift(src); // 向数组的开头添加一个或更多元素 并返回新的长度
-            audio.addEventListener("ended", playEndedHandler, false);
-
-            function playEndedHandler() {
-                src = musicList.pop();
-                audio.src = src;
-                musicList.unshift(src);
-            }
-        }
-
-        function music_s() {
-            if (audio.paused) {
-                audio.play(); // 播放
-                document.getElementById('music_png').src = 'https://cdn.jsdelivr.net/gh/nianme/ni/images/music4.png';
-            } else {
-                audio.pause(); // 暂停
-                document.getElementById('music_png').src = 'https://cdn.jsdelivr.net/gh/nianme/ni/images/music2.png';
-            }
-        }
-    </script>
+    </div>
+    <div id="preview"></div>
 
 </body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://lib.baomitu.com/analytics.js/2.9.1/analytics.min.js', 'ga');
+
+    ga('create', 'UA-142766624-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 </html>
